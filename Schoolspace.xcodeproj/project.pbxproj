@@ -1,0 +1,1169 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E14A7DE12A01D8FA006BA55C /* SchoolspaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DE02A01D8FA006BA55C /* SchoolspaceApp.swift */; };
+		E14A7DF32A01D8FC006BA55C /* SchoolspaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DF22A01D8FC006BA55C /* SchoolspaceTests.swift */; };
+		E14A7DFD2A01D8FC006BA55C /* SchoolspaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DFC2A01D8FC006BA55C /* SchoolspaceUITests.swift */; };
+		E14A7DFF2A01D8FC006BA55C /* SchoolspaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DFE2A01D8FC006BA55C /* SchoolspaceUITestsLaunchTests.swift */; };
+		E15BFCE92A06DC84005F50AA /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15BFCE82A06DC84005F50AA /* Exam.swift */; };
+		E15BFCEB2A06E036005F50AA /* ExamDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15BFCEA2A06E036005F50AA /* ExamDetailsView.swift */; };
+		E15BFCED2A07257F005F50AA /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15BFCEC2A07257F005F50AA /* ChatView.swift */; };
+		E15BFCEF2A072919005F50AA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15BFCEE2A072919005F50AA /* ChatMessage.swift */; };
+		E15BFCF12A073540005F50AA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15BFCF02A073540005F50AA /* Message.swift */; };
+		E169BFA12A01DC1700772191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E169BFA02A01DC1700772191 /* Assets.xcassets */; };
+		E169BFA32A01DC3800772191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E169BFA22A01DC3800772191 /* Assets.xcassets */; };
+		E169BFB02A01DF3100772191 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFAF2A01DF3100772191 /* FirebaseAuth */; };
+		E169BFB22A01DF3100772191 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFB12A01DF3100772191 /* FirebaseAuthCombine-Community */; };
+		E169BFB42A01DF3100772191 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFB32A01DF3100772191 /* FirebaseDatabase */; };
+		E169BFB62A01DF3100772191 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFB52A01DF3100772191 /* FirebaseDatabaseSwift */; };
+		E169BFB82A01DF3100772191 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFB72A01DF3100772191 /* FirebaseFirestore */; };
+		E169BFBA2A01DF3100772191 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFB92A01DF3100772191 /* FirebaseFirestoreCombine-Community */; };
+		E169BFBC2A01DF3100772191 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFBB2A01DF3100772191 /* FirebaseFirestoreSwift */; };
+		E169BFBE2A01DF3100772191 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFBD2A01DF3100772191 /* FirebaseFunctions */; };
+		E169BFC02A01DF3100772191 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFBF2A01DF3100772191 /* FirebaseFunctionsCombine-Community */; };
+		E169BFC22A01DF3100772191 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFC12A01DF3100772191 /* FirebaseStorage */; };
+		E169BFC42A01DF3100772191 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E169BFC32A01DF3100772191 /* FirebaseStorageCombine-Community */; };
+		E1833CF82A01E1E600C13200 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833CF72A01E1E600C13200 /* Splash.swift */; };
+		E1833CF92A01E1E600C13200 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833CF72A01E1E600C13200 /* Splash.swift */; };
+		E1833CFA2A01E1E600C13200 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833CF72A01E1E600C13200 /* Splash.swift */; };
+		E1833D002A01E24800C13200 /* ParentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833CFF2A01E24800C13200 /* ParentHomeview.swift */; };
+		E1833D012A01E24800C13200 /* ParentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833CFF2A01E24800C13200 /* ParentHomeview.swift */; };
+		E1833D022A01E24800C13200 /* ParentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833CFF2A01E24800C13200 /* ParentHomeview.swift */; };
+		E1833D042A01E25B00C13200 /* ParentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D032A01E25B00C13200 /* ParentMainview.swift */; };
+		E1833D052A01E25B00C13200 /* ParentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D032A01E25B00C13200 /* ParentMainview.swift */; };
+		E1833D062A01E25B00C13200 /* ParentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D032A01E25B00C13200 /* ParentMainview.swift */; };
+		E1833D082A01E27300C13200 /* ParentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D072A01E27300C13200 /* ParentProfileview.swift */; };
+		E1833D092A01E27300C13200 /* ParentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D072A01E27300C13200 /* ParentProfileview.swift */; };
+		E1833D0A2A01E27300C13200 /* ParentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D072A01E27300C13200 /* ParentProfileview.swift */; };
+		E1833D0C2A01E28B00C13200 /* ParentTimetableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */; };
+		E1833D0D2A01E28B00C13200 /* ParentTimetableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */; };
+		E1833D0E2A01E28B00C13200 /* ParentTimetableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */; };
+		E1833D112A01E2C500C13200 /* StudentClassroomview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D102A01E2C500C13200 /* StudentClassroomview.swift */; };
+		E1833D122A01E2C500C13200 /* StudentClassroomview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D102A01E2C500C13200 /* StudentClassroomview.swift */; };
+		E1833D132A01E2C500C13200 /* StudentClassroomview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D102A01E2C500C13200 /* StudentClassroomview.swift */; };
+		E1833D152A01E2DA00C13200 /* StudentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D142A01E2DA00C13200 /* StudentHomeview.swift */; };
+		E1833D162A01E2DA00C13200 /* StudentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D142A01E2DA00C13200 /* StudentHomeview.swift */; };
+		E1833D172A01E2DA00C13200 /* StudentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D142A01E2DA00C13200 /* StudentHomeview.swift */; };
+		E1833D192A01E2F500C13200 /* StudentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D182A01E2F500C13200 /* StudentMainview.swift */; };
+		E1833D1A2A01E2F500C13200 /* StudentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D182A01E2F500C13200 /* StudentMainview.swift */; };
+		E1833D1B2A01E2F500C13200 /* StudentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D182A01E2F500C13200 /* StudentMainview.swift */; };
+		E1833D1D2A01E30B00C13200 /* StudentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */; };
+		E1833D1E2A01E30B00C13200 /* StudentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */; };
+		E1833D1F2A01E30B00C13200 /* StudentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */; };
+		E1833D212A01E32000C13200 /* StudentReportview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D202A01E32000C13200 /* StudentReportview.swift */; };
+		E1833D222A01E32000C13200 /* StudentReportview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D202A01E32000C13200 /* StudentReportview.swift */; };
+		E1833D232A01E32000C13200 /* StudentReportview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D202A01E32000C13200 /* StudentReportview.swift */; };
+		E1833D262A01E34300C13200 /* ClassroomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D252A01E34300C13200 /* ClassroomBox.swift */; };
+		E1833D272A01E34300C13200 /* ClassroomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D252A01E34300C13200 /* ClassroomBox.swift */; };
+		E1833D282A01E34300C13200 /* ClassroomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D252A01E34300C13200 /* ClassroomBox.swift */; };
+		E1833D2A2A01E35700C13200 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D292A01E35700C13200 /* SearchBar.swift */; };
+		E1833D2B2A01E35700C13200 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D292A01E35700C13200 /* SearchBar.swift */; };
+		E1833D2C2A01E35700C13200 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D292A01E35700C13200 /* SearchBar.swift */; };
+		E1833D2E2A01E35F00C13200 /* SubjectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D2D2A01E35F00C13200 /* SubjectBox.swift */; };
+		E1833D2F2A01E35F00C13200 /* SubjectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D2D2A01E35F00C13200 /* SubjectBox.swift */; };
+		E1833D302A01E35F00C13200 /* SubjectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D2D2A01E35F00C13200 /* SubjectBox.swift */; };
+		E1833D322A01E36600C13200 /* TimetableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D312A01E36600C13200 /* TimetableBox.swift */; };
+		E1833D332A01E36600C13200 /* TimetableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D312A01E36600C13200 /* TimetableBox.swift */; };
+		E1833D342A01E36600C13200 /* TimetableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D312A01E36600C13200 /* TimetableBox.swift */; };
+		E1833D372A01E39800C13200 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D362A01E39800C13200 /* SettingsView.swift */; };
+		E1833D382A01E39800C13200 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D362A01E39800C13200 /* SettingsView.swift */; };
+		E1833D392A01E39800C13200 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D362A01E39800C13200 /* SettingsView.swift */; };
+		E1833D452A01E3FD00C13200 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D442A01E3FD00C13200 /* Login.swift */; };
+		E1833D462A01E3FD00C13200 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D442A01E3FD00C13200 /* Login.swift */; };
+		E1833D472A01E3FD00C13200 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D442A01E3FD00C13200 /* Login.swift */; };
+		E1833D492A01E40C00C13200 /* OtpModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D482A01E40C00C13200 /* OtpModal.swift */; };
+		E1833D4A2A01E40C00C13200 /* OtpModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D482A01E40C00C13200 /* OtpModal.swift */; };
+		E1833D4B2A01E40C00C13200 /* OtpModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D482A01E40C00C13200 /* OtpModal.swift */; };
+		E1833D4D2A01E41D00C13200 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D4C2A01E41D00C13200 /* ResetPasswordView.swift */; };
+		E1833D4E2A01E41D00C13200 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D4C2A01E41D00C13200 /* ResetPasswordView.swift */; };
+		E1833D4F2A01E41D00C13200 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D4C2A01E41D00C13200 /* ResetPasswordView.swift */; };
+		E1833D512A01E42C00C13200 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D502A01E42C00C13200 /* Signup.swift */; };
+		E1833D522A01E42C00C13200 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D502A01E42C00C13200 /* Signup.swift */; };
+		E1833D532A01E42C00C13200 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D502A01E42C00C13200 /* Signup.swift */; };
+		E1833D552A01E43A00C13200 /* SignupModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D542A01E43A00C13200 /* SignupModal.swift */; };
+		E1833D562A01E43A00C13200 /* SignupModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D542A01E43A00C13200 /* SignupModal.swift */; };
+		E1833D572A01E43A00C13200 /* SignupModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D542A01E43A00C13200 /* SignupModal.swift */; };
+		E1833D592A01E44A00C13200 /* VerifyAccountModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D582A01E44A00C13200 /* VerifyAccountModal.swift */; };
+		E1833D5A2A01E44A00C13200 /* VerifyAccountModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D582A01E44A00C13200 /* VerifyAccountModal.swift */; };
+		E1833D5B2A01E44A00C13200 /* VerifyAccountModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D582A01E44A00C13200 /* VerifyAccountModal.swift */; };
+		E1833D5D2A01E47200C13200 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D5C2A01E47200C13200 /* LoginViewModel.swift */; };
+		E1833D5E2A01E47200C13200 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D5C2A01E47200C13200 /* LoginViewModel.swift */; };
+		E1833D5F2A01E47200C13200 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D5C2A01E47200C13200 /* LoginViewModel.swift */; };
+		E1833D612A01E48400C13200 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D602A01E48400C13200 /* SignupViewModel.swift */; };
+		E1833D622A01E48400C13200 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D602A01E48400C13200 /* SignupViewModel.swift */; };
+		E1833D632A01E48400C13200 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D602A01E48400C13200 /* SignupViewModel.swift */; };
+		E1833D692A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D682A01E4AB00C13200 /* StudentClassroomViewModel.swift */; };
+		E1833D6A2A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D682A01E4AB00C13200 /* StudentClassroomViewModel.swift */; };
+		E1833D6B2A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D682A01E4AB00C13200 /* StudentClassroomViewModel.swift */; };
+		E1833D6D2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D6C2A01E4BC00C13200 /* StudentHomeViewModel.swift */; };
+		E1833D6E2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D6C2A01E4BC00C13200 /* StudentHomeViewModel.swift */; };
+		E1833D6F2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D6C2A01E4BC00C13200 /* StudentHomeViewModel.swift */; };
+		E1833D712A01E4DB00C13200 /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D702A01E4DB00C13200 /* Classe.swift */; };
+		E1833D722A01E4DB00C13200 /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D702A01E4DB00C13200 /* Classe.swift */; };
+		E1833D732A01E4DB00C13200 /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D702A01E4DB00C13200 /* Classe.swift */; };
+		E1833D752A01E4EA00C13200 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D742A01E4EA00C13200 /* Classroom.swift */; };
+		E1833D762A01E4EA00C13200 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D742A01E4EA00C13200 /* Classroom.swift */; };
+		E1833D772A01E4EA00C13200 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D742A01E4EA00C13200 /* Classroom.swift */; };
+		E1833D792A01E4EF00C13200 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D782A01E4EF00C13200 /* Subject.swift */; };
+		E1833D7A2A01E4EF00C13200 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D782A01E4EF00C13200 /* Subject.swift */; };
+		E1833D7B2A01E4EF00C13200 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D782A01E4EF00C13200 /* Subject.swift */; };
+		E1833D7D2A01E4F900C13200 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D7C2A01E4F900C13200 /* Timetable.swift */; };
+		E1833D7E2A01E4F900C13200 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D7C2A01E4F900C13200 /* Timetable.swift */; };
+		E1833D7F2A01E4F900C13200 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D7C2A01E4F900C13200 /* Timetable.swift */; };
+		E1833D812A01E4FF00C13200 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D802A01E4FF00C13200 /* User.swift */; };
+		E1833D822A01E4FF00C13200 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D802A01E4FF00C13200 /* User.swift */; };
+		E1833D832A01E4FF00C13200 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D802A01E4FF00C13200 /* User.swift */; };
+		E1833D852A01E50700C13200 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D842A01E50700C13200 /* UserResponse.swift */; };
+		E1833D862A01E50700C13200 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D842A01E50700C13200 /* UserResponse.swift */; };
+		E1833D872A01E50700C13200 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D842A01E50700C13200 /* UserResponse.swift */; };
+		E19F14CF2A06CB7C00FCEDA3 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = E19F14CE2A06CB7C00FCEDA3 /* URLImage */; };
+		E19F14D12A06CB7C00FCEDA3 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = E19F14D02A06CB7C00FCEDA3 /* URLImageStore */; };
+		E19F14D32A06CF6D00FCEDA3 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F14D22A06CF6D00FCEDA3 /* EventDetailsView.swift */; };
+		E1ABB2E22A01EB1000FB4D6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1ABB2E12A01EB1000FB4D6D /* GoogleService-Info.plist */; };
+		E1ABB2E42A01ECBB00FB4D6D /* StudentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2E32A01ECBB00FB4D6D /* StudentResponse.swift */; };
+		E1ABB2E62A01ED1100FB4D6D /* ParentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2E52A01ED1000FB4D6D /* ParentResponse.swift */; };
+		E1ABB2E82A01EE9100FB4D6D /* TeacherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2E72A01EE9100FB4D6D /* TeacherResponse.swift */; };
+		E1ABB2EA2A01F5BF00FB4D6D /* AttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2E92A01F5BF00FB4D6D /* AttendanceView.swift */; };
+		E1ABB2EC2A01F5CF00FB4D6D /* FeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2EB2A01F5CF00FB4D6D /* FeesView.swift */; };
+		E1ABB2EE2A01F5DD00FB4D6D /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2ED2A01F5DD00FB4D6D /* PerformanceView.swift */; };
+		E1ABB2F02A01F60F00FB4D6D /* AskTeacherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2EF2A01F60F00FB4D6D /* AskTeacherView.swift */; };
+		E1ABB2F22A01F71400FB4D6D /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2F12A01F71400FB4D6D /* Attendance.swift */; };
+		E1ABB2F42A01FACB00FB4D6D /* Fee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ABB2F32A01FACB00FB4D6D /* Fee.swift */; };
+		E1B2DCDA2A02731200B53D7A /* EventBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2DCD92A02731200B53D7A /* EventBox.swift */; };
+		E1B2DCDC2A02736D00B53D7A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2DCDB2A02736D00B53D7A /* Event.swift */; };
+		E1D726782A07FA4000C34EEB /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726772A07FA4000C34EEB /* ChatList.swift */; };
+		E1D7267A2A080A4C00C34EEB /* ParentHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726792A080A4C00C34EEB /* ParentHomeViewModel.swift */; };
+		E1D7267C2A080C6000C34EEB /* StudentDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7267B2A080C6000C34EEB /* StudentDetailsResponse.swift */; };
+		E1D7267F2A080E7700C34EEB /* TeacherMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7267E2A080E7700C34EEB /* TeacherMainView.swift */; };
+		E1D726812A080F4900C34EEB /* TeacherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726802A080F4900C34EEB /* TeacherHomeView.swift */; };
+		E1D726832A080F5700C34EEB /* TeacherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726822A080F5700C34EEB /* TeacherProfileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E14A7DEF2A01D8FC006BA55C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E14A7DD52A01D8FA006BA55C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14A7DDC2A01D8FA006BA55C;
+			remoteInfo = Schoolspace;
+		};
+		E14A7DF92A01D8FC006BA55C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E14A7DD52A01D8FA006BA55C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14A7DDC2A01D8FA006BA55C;
+			remoteInfo = Schoolspace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E10E4D792A01E61B007E3D4E /* SchoolspaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolspaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10E4D7A2A01E61B007E3D4E /* SchoolspaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolspaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14A7DE02A01D8FA006BA55C /* SchoolspaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolspaceApp.swift; sourceTree = "<group>"; };
+		E14A7DE62A01D8FC006BA55C /* Schoolspace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schoolspace.entitlements; sourceTree = "<group>"; };
+		E14A7DF22A01D8FC006BA55C /* SchoolspaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolspaceTests.swift; sourceTree = "<group>"; };
+		E14A7DFC2A01D8FC006BA55C /* SchoolspaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolspaceUITests.swift; sourceTree = "<group>"; };
+		E14A7DFE2A01D8FC006BA55C /* SchoolspaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolspaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E15BFCE82A06DC84005F50AA /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		E15BFCEA2A06E036005F50AA /* ExamDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDetailsView.swift; sourceTree = "<group>"; };
+		E15BFCEC2A07257F005F50AA /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		E15BFCEE2A072919005F50AA /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		E15BFCF02A073540005F50AA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E169BFA02A01DC1700772191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E169BFA22A01DC3800772191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1833CF72A01E1E600C13200 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		E1833CFF2A01E24800C13200 /* ParentHomeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHomeview.swift; sourceTree = "<group>"; };
+		E1833D032A01E25B00C13200 /* ParentMainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMainview.swift; sourceTree = "<group>"; };
+		E1833D072A01E27300C13200 /* ParentProfileview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentProfileview.swift; sourceTree = "<group>"; };
+		E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTimetableview.swift; sourceTree = "<group>"; };
+		E1833D102A01E2C500C13200 /* StudentClassroomview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClassroomview.swift; sourceTree = "<group>"; };
+		E1833D142A01E2DA00C13200 /* StudentHomeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeview.swift; sourceTree = "<group>"; };
+		E1833D182A01E2F500C13200 /* StudentMainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainview.swift; sourceTree = "<group>"; };
+		E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileview.swift; sourceTree = "<group>"; };
+		E1833D202A01E32000C13200 /* StudentReportview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentReportview.swift; sourceTree = "<group>"; };
+		E1833D252A01E34300C13200 /* ClassroomBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomBox.swift; sourceTree = "<group>"; };
+		E1833D292A01E35700C13200 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E1833D2D2A01E35F00C13200 /* SubjectBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectBox.swift; sourceTree = "<group>"; };
+		E1833D312A01E36600C13200 /* TimetableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableBox.swift; sourceTree = "<group>"; };
+		E1833D362A01E39800C13200 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E1833D442A01E3FD00C13200 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E1833D482A01E40C00C13200 /* OtpModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpModal.swift; sourceTree = "<group>"; };
+		E1833D4C2A01E41D00C13200 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		E1833D502A01E42C00C13200 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		E1833D542A01E43A00C13200 /* SignupModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModal.swift; sourceTree = "<group>"; };
+		E1833D582A01E44A00C13200 /* VerifyAccountModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountModal.swift; sourceTree = "<group>"; };
+		E1833D5C2A01E47200C13200 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E1833D602A01E48400C13200 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		E1833D682A01E4AB00C13200 /* StudentClassroomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClassroomViewModel.swift; sourceTree = "<group>"; };
+		E1833D6C2A01E4BC00C13200 /* StudentHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeViewModel.swift; sourceTree = "<group>"; };
+		E1833D702A01E4DB00C13200 /* Classe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classe.swift; sourceTree = "<group>"; };
+		E1833D742A01E4EA00C13200 /* Classroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom.swift; sourceTree = "<group>"; };
+		E1833D782A01E4EF00C13200 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		E1833D7C2A01E4F900C13200 /* Timetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
+		E1833D802A01E4FF00C13200 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1833D842A01E50700C13200 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		E19F14D22A06CF6D00FCEDA3 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		E1ABB2E12A01EB1000FB4D6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1ABB2E32A01ECBB00FB4D6D /* StudentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResponse.swift; sourceTree = "<group>"; };
+		E1ABB2E52A01ED1000FB4D6D /* ParentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentResponse.swift; sourceTree = "<group>"; };
+		E1ABB2E72A01EE9100FB4D6D /* TeacherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherResponse.swift; sourceTree = "<group>"; };
+		E1ABB2E92A01F5BF00FB4D6D /* AttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceView.swift; sourceTree = "<group>"; };
+		E1ABB2EB2A01F5CF00FB4D6D /* FeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesView.swift; sourceTree = "<group>"; };
+		E1ABB2ED2A01F5DD00FB4D6D /* PerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
+		E1ABB2EF2A01F60F00FB4D6D /* AskTeacherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskTeacherView.swift; sourceTree = "<group>"; };
+		E1ABB2F12A01F71400FB4D6D /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		E1ABB2F32A01FACB00FB4D6D /* Fee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fee.swift; sourceTree = "<group>"; };
+		E1B2DCD72A02683E00B53D7A /* Schoolspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schoolspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B2DCD92A02731200B53D7A /* EventBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBox.swift; sourceTree = "<group>"; };
+		E1B2DCDB2A02736D00B53D7A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E1D726772A07FA4000C34EEB /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		E1D726792A080A4C00C34EEB /* ParentHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHomeViewModel.swift; sourceTree = "<group>"; };
+		E1D7267B2A080C6000C34EEB /* StudentDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailsResponse.swift; sourceTree = "<group>"; };
+		E1D7267E2A080E7700C34EEB /* TeacherMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherMainView.swift; sourceTree = "<group>"; };
+		E1D726802A080F4900C34EEB /* TeacherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherHomeView.swift; sourceTree = "<group>"; };
+		E1D726822A080F5700C34EEB /* TeacherProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E14A7DDA2A01D8FA006BA55C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E169BFC42A01DF3100772191 /* FirebaseStorageCombine-Community in Frameworks */,
+				E169BFB62A01DF3100772191 /* FirebaseDatabaseSwift in Frameworks */,
+				E169BFB42A01DF3100772191 /* FirebaseDatabase in Frameworks */,
+				E169BFC02A01DF3100772191 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				E169BFC22A01DF3100772191 /* FirebaseStorage in Frameworks */,
+				E169BFB02A01DF3100772191 /* FirebaseAuth in Frameworks */,
+				E19F14D12A06CB7C00FCEDA3 /* URLImageStore in Frameworks */,
+				E169BFBE2A01DF3100772191 /* FirebaseFunctions in Frameworks */,
+				E169BFBC2A01DF3100772191 /* FirebaseFirestoreSwift in Frameworks */,
+				E169BFBA2A01DF3100772191 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				E169BFB82A01DF3100772191 /* FirebaseFirestore in Frameworks */,
+				E19F14CF2A06CB7C00FCEDA3 /* URLImage in Frameworks */,
+				E169BFB22A01DF3100772191 /* FirebaseAuthCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A7DEB2A01D8FC006BA55C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A7DF52A01D8FC006BA55C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E14A7DD42A01D8FA006BA55C = {
+			isa = PBXGroup;
+			children = (
+				E14A7DDF2A01D8FA006BA55C /* Schoolspace */,
+				E14A7DF12A01D8FC006BA55C /* SchoolspaceTests */,
+				E14A7DFB2A01D8FC006BA55C /* SchoolspaceUITests */,
+				E10E4D792A01E61B007E3D4E /* SchoolspaceTests.xctest */,
+				E10E4D7A2A01E61B007E3D4E /* SchoolspaceUITests.xctest */,
+				E1B2DCD72A02683E00B53D7A /* Schoolspace.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E14A7DDF2A01D8FA006BA55C /* Schoolspace */ = {
+			isa = PBXGroup;
+			children = (
+				E1ABB2E12A01EB1000FB4D6D /* GoogleService-Info.plist */,
+				E1833CFC2A01E20900C13200 /* View Model */,
+				E1833CFB2A01E20300C13200 /* Model */,
+				E1833CF62A01E1DA00C13200 /* View */,
+				E14A7DE02A01D8FA006BA55C /* SchoolspaceApp.swift */,
+				E169BFA02A01DC1700772191 /* Assets.xcassets */,
+				E169BFA22A01DC3800772191 /* Assets.xcassets */,
+				E14A7DE62A01D8FC006BA55C /* Schoolspace.entitlements */,
+			);
+			path = Schoolspace;
+			sourceTree = "<group>";
+		};
+		E14A7DF12A01D8FC006BA55C /* SchoolspaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				E14A7DF22A01D8FC006BA55C /* SchoolspaceTests.swift */,
+			);
+			path = SchoolspaceTests;
+			sourceTree = "<group>";
+		};
+		E14A7DFB2A01D8FC006BA55C /* SchoolspaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E14A7DFC2A01D8FC006BA55C /* SchoolspaceUITests.swift */,
+				E14A7DFE2A01D8FC006BA55C /* SchoolspaceUITestsLaunchTests.swift */,
+			);
+			path = SchoolspaceUITests;
+			sourceTree = "<group>";
+		};
+		E1833CF62A01E1DA00C13200 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1D7267D2A080E6700C34EEB /* teacher */,
+				E1833D3A2A01E3AC00C13200 /* authentication */,
+				E1833D352A01E38B00C13200 /* App Settings */,
+				E1833D0F2A01E2B100C13200 /* student */,
+				E1833CFD2A01E21D00C13200 /* parent */,
+				E1833CF72A01E1E600C13200 /* Splash.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1833CFB2A01E20300C13200 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1833D702A01E4DB00C13200 /* Classe.swift */,
+				E1833D742A01E4EA00C13200 /* Classroom.swift */,
+				E1833D782A01E4EF00C13200 /* Subject.swift */,
+				E1833D7C2A01E4F900C13200 /* Timetable.swift */,
+				E1833D802A01E4FF00C13200 /* User.swift */,
+				E1833D842A01E50700C13200 /* UserResponse.swift */,
+				E1ABB2E32A01ECBB00FB4D6D /* StudentResponse.swift */,
+				E1ABB2E52A01ED1000FB4D6D /* ParentResponse.swift */,
+				E1ABB2E72A01EE9100FB4D6D /* TeacherResponse.swift */,
+				E1ABB2F12A01F71400FB4D6D /* Attendance.swift */,
+				E1ABB2F32A01FACB00FB4D6D /* Fee.swift */,
+				E1B2DCDB2A02736D00B53D7A /* Event.swift */,
+				E15BFCE82A06DC84005F50AA /* Exam.swift */,
+				E15BFCEE2A072919005F50AA /* ChatMessage.swift */,
+				E15BFCF02A073540005F50AA /* Message.swift */,
+				E1D7267B2A080C6000C34EEB /* StudentDetailsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1833CFC2A01E20900C13200 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1833D5C2A01E47200C13200 /* LoginViewModel.swift */,
+				E1833D602A01E48400C13200 /* SignupViewModel.swift */,
+				E1833D682A01E4AB00C13200 /* StudentClassroomViewModel.swift */,
+				E1833D6C2A01E4BC00C13200 /* StudentHomeViewModel.swift */,
+				E1D726792A080A4C00C34EEB /* ParentHomeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		E1833CFD2A01E21D00C13200 /* parent */ = {
+			isa = PBXGroup;
+			children = (
+				E1B2DCD82A02730500B53D7A /* Components */,
+				E1833CFE2A01E23300C13200 /* detailsview */,
+				E1833CFF2A01E24800C13200 /* ParentHomeview.swift */,
+				E1833D032A01E25B00C13200 /* ParentMainview.swift */,
+				E1833D072A01E27300C13200 /* ParentProfileview.swift */,
+				E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */,
+			);
+			path = parent;
+			sourceTree = "<group>";
+		};
+		E1833CFE2A01E23300C13200 /* detailsview */ = {
+			isa = PBXGroup;
+			children = (
+				E1ABB2E92A01F5BF00FB4D6D /* AttendanceView.swift */,
+				E1ABB2EB2A01F5CF00FB4D6D /* FeesView.swift */,
+				E1ABB2ED2A01F5DD00FB4D6D /* PerformanceView.swift */,
+				E1ABB2EF2A01F60F00FB4D6D /* AskTeacherView.swift */,
+				E19F14D22A06CF6D00FCEDA3 /* EventDetailsView.swift */,
+				E15BFCEA2A06E036005F50AA /* ExamDetailsView.swift */,
+				E15BFCEC2A07257F005F50AA /* ChatView.swift */,
+				E1D726772A07FA4000C34EEB /* ChatList.swift */,
+			);
+			path = detailsview;
+			sourceTree = "<group>";
+		};
+		E1833D0F2A01E2B100C13200 /* student */ = {
+			isa = PBXGroup;
+			children = (
+				E1833D242A01E33300C13200 /* Components */,
+				E1833D102A01E2C500C13200 /* StudentClassroomview.swift */,
+				E1833D142A01E2DA00C13200 /* StudentHomeview.swift */,
+				E1833D182A01E2F500C13200 /* StudentMainview.swift */,
+				E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */,
+				E1833D202A01E32000C13200 /* StudentReportview.swift */,
+			);
+			path = student;
+			sourceTree = "<group>";
+		};
+		E1833D242A01E33300C13200 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1833D252A01E34300C13200 /* ClassroomBox.swift */,
+				E1833D292A01E35700C13200 /* SearchBar.swift */,
+				E1833D2D2A01E35F00C13200 /* SubjectBox.swift */,
+				E1833D312A01E36600C13200 /* TimetableBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E1833D352A01E38B00C13200 /* App Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E1833D362A01E39800C13200 /* SettingsView.swift */,
+			);
+			path = "App Settings";
+			sourceTree = "<group>";
+		};
+		E1833D3A2A01E3AC00C13200 /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E1833D442A01E3FD00C13200 /* Login.swift */,
+				E1833D482A01E40C00C13200 /* OtpModal.swift */,
+				E1833D4C2A01E41D00C13200 /* ResetPasswordView.swift */,
+				E1833D502A01E42C00C13200 /* Signup.swift */,
+				E1833D542A01E43A00C13200 /* SignupModal.swift */,
+				E1833D582A01E44A00C13200 /* VerifyAccountModal.swift */,
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
+		E1B2DCD82A02730500B53D7A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1B2DCD92A02731200B53D7A /* EventBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E1D7267D2A080E6700C34EEB /* teacher */ = {
+			isa = PBXGroup;
+			children = (
+				E1D7267E2A080E7700C34EEB /* TeacherMainView.swift */,
+				E1D726802A080F4900C34EEB /* TeacherHomeView.swift */,
+				E1D726822A080F5700C34EEB /* TeacherProfileView.swift */,
+			);
+			path = teacher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E14A7DDC2A01D8FA006BA55C /* Schoolspace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14A7E022A01D8FC006BA55C /* Build configuration list for PBXNativeTarget "Schoolspace" */;
+			buildPhases = (
+				E14A7DD92A01D8FA006BA55C /* Sources */,
+				E14A7DDA2A01D8FA006BA55C /* Frameworks */,
+				E14A7DDB2A01D8FA006BA55C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Schoolspace;
+			packageProductDependencies = (
+				E169BFAF2A01DF3100772191 /* FirebaseAuth */,
+				E169BFB12A01DF3100772191 /* FirebaseAuthCombine-Community */,
+				E169BFB32A01DF3100772191 /* FirebaseDatabase */,
+				E169BFB52A01DF3100772191 /* FirebaseDatabaseSwift */,
+				E169BFB72A01DF3100772191 /* FirebaseFirestore */,
+				E169BFB92A01DF3100772191 /* FirebaseFirestoreCombine-Community */,
+				E169BFBB2A01DF3100772191 /* FirebaseFirestoreSwift */,
+				E169BFBD2A01DF3100772191 /* FirebaseFunctions */,
+				E169BFBF2A01DF3100772191 /* FirebaseFunctionsCombine-Community */,
+				E169BFC12A01DF3100772191 /* FirebaseStorage */,
+				E169BFC32A01DF3100772191 /* FirebaseStorageCombine-Community */,
+				E19F14CE2A06CB7C00FCEDA3 /* URLImage */,
+				E19F14D02A06CB7C00FCEDA3 /* URLImageStore */,
+			);
+			productName = Schoolspace;
+			productReference = E1B2DCD72A02683E00B53D7A /* Schoolspace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E14A7DED2A01D8FC006BA55C /* SchoolspaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14A7E052A01D8FC006BA55C /* Build configuration list for PBXNativeTarget "SchoolspaceTests" */;
+			buildPhases = (
+				E14A7DEA2A01D8FC006BA55C /* Sources */,
+				E14A7DEB2A01D8FC006BA55C /* Frameworks */,
+				E14A7DEC2A01D8FC006BA55C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14A7DF02A01D8FC006BA55C /* PBXTargetDependency */,
+			);
+			name = SchoolspaceTests;
+			productName = SchoolspaceTests;
+			productReference = E10E4D792A01E61B007E3D4E /* SchoolspaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E14A7DF72A01D8FC006BA55C /* SchoolspaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14A7E082A01D8FC006BA55C /* Build configuration list for PBXNativeTarget "SchoolspaceUITests" */;
+			buildPhases = (
+				E14A7DF42A01D8FC006BA55C /* Sources */,
+				E14A7DF52A01D8FC006BA55C /* Frameworks */,
+				E14A7DF62A01D8FC006BA55C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14A7DFA2A01D8FC006BA55C /* PBXTargetDependency */,
+			);
+			name = SchoolspaceUITests;
+			productName = SchoolspaceUITests;
+			productReference = E10E4D7A2A01E61B007E3D4E /* SchoolspaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E14A7DD52A01D8FA006BA55C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E14A7DDC2A01D8FA006BA55C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					E14A7DED2A01D8FC006BA55C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = E14A7DDC2A01D8FA006BA55C;
+					};
+					E14A7DF72A01D8FC006BA55C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = E14A7DDC2A01D8FA006BA55C;
+					};
+				};
+			};
+			buildConfigurationList = E14A7DD82A01D8FA006BA55C /* Build configuration list for PBXProject "Schoolspace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E14A7DD42A01D8FA006BA55C;
+			packageReferences = (
+				E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E19F14CD2A06CB7C00FCEDA3 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
+			productRefGroup = E14A7DD42A01D8FA006BA55C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E14A7DDC2A01D8FA006BA55C /* Schoolspace */,
+				E14A7DED2A01D8FC006BA55C /* SchoolspaceTests */,
+				E14A7DF72A01D8FC006BA55C /* SchoolspaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E14A7DDB2A01D8FA006BA55C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E169BFA32A01DC3800772191 /* Assets.xcassets in Resources */,
+				E169BFA12A01DC1700772191 /* Assets.xcassets in Resources */,
+				E1ABB2E22A01EB1000FB4D6D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A7DEC2A01D8FC006BA55C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A7DF62A01D8FC006BA55C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E14A7DD92A01D8FA006BA55C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1833D5D2A01E47200C13200 /* LoginViewModel.swift in Sources */,
+				E1B2DCDC2A02736D00B53D7A /* Event.swift in Sources */,
+				E1833D2E2A01E35F00C13200 /* SubjectBox.swift in Sources */,
+				E1D7267C2A080C6000C34EEB /* StudentDetailsResponse.swift in Sources */,
+				E1833D512A01E42C00C13200 /* Signup.swift in Sources */,
+				E1ABB2EE2A01F5DD00FB4D6D /* PerformanceView.swift in Sources */,
+				E1833D792A01E4EF00C13200 /* Subject.swift in Sources */,
+				E1833D812A01E4FF00C13200 /* User.swift in Sources */,
+				E1D726812A080F4900C34EEB /* TeacherHomeView.swift in Sources */,
+				E1833D452A01E3FD00C13200 /* Login.swift in Sources */,
+				E1833D2A2A01E35700C13200 /* SearchBar.swift in Sources */,
+				E1833D752A01E4EA00C13200 /* Classroom.swift in Sources */,
+				E1833CF82A01E1E600C13200 /* Splash.swift in Sources */,
+				E1D726832A080F5700C34EEB /* TeacherProfileView.swift in Sources */,
+				E1833D262A01E34300C13200 /* ClassroomBox.swift in Sources */,
+				E1833D6D2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */,
+				E1833D042A01E25B00C13200 /* ParentMainview.swift in Sources */,
+				E1ABB2E42A01ECBB00FB4D6D /* StudentResponse.swift in Sources */,
+				E1833D7D2A01E4F900C13200 /* Timetable.swift in Sources */,
+				E1833D322A01E36600C13200 /* TimetableBox.swift in Sources */,
+				E1B2DCDA2A02731200B53D7A /* EventBox.swift in Sources */,
+				E1ABB2E82A01EE9100FB4D6D /* TeacherResponse.swift in Sources */,
+				E1833D1D2A01E30B00C13200 /* StudentProfileview.swift in Sources */,
+				E19F14D32A06CF6D00FCEDA3 /* EventDetailsView.swift in Sources */,
+				E1833D212A01E32000C13200 /* StudentReportview.swift in Sources */,
+				E1833D082A01E27300C13200 /* ParentProfileview.swift in Sources */,
+				E1833D372A01E39800C13200 /* SettingsView.swift in Sources */,
+				E1833D592A01E44A00C13200 /* VerifyAccountModal.swift in Sources */,
+				E1D726782A07FA4000C34EEB /* ChatList.swift in Sources */,
+				E1833D152A01E2DA00C13200 /* StudentHomeview.swift in Sources */,
+				E15BFCEB2A06E036005F50AA /* ExamDetailsView.swift in Sources */,
+				E15BFCF12A073540005F50AA /* Message.swift in Sources */,
+				E1ABB2F42A01FACB00FB4D6D /* Fee.swift in Sources */,
+				E1833D112A01E2C500C13200 /* StudentClassroomview.swift in Sources */,
+				E1D7267F2A080E7700C34EEB /* TeacherMainView.swift in Sources */,
+				E1833D192A01E2F500C13200 /* StudentMainview.swift in Sources */,
+				E1833D712A01E4DB00C13200 /* Classe.swift in Sources */,
+				E1ABB2EA2A01F5BF00FB4D6D /* AttendanceView.swift in Sources */,
+				E1833D4D2A01E41D00C13200 /* ResetPasswordView.swift in Sources */,
+				E15BFCEF2A072919005F50AA /* ChatMessage.swift in Sources */,
+				E1833D612A01E48400C13200 /* SignupViewModel.swift in Sources */,
+				E1ABB2EC2A01F5CF00FB4D6D /* FeesView.swift in Sources */,
+				E15BFCED2A07257F005F50AA /* ChatView.swift in Sources */,
+				E1ABB2F02A01F60F00FB4D6D /* AskTeacherView.swift in Sources */,
+				E1ABB2E62A01ED1100FB4D6D /* ParentResponse.swift in Sources */,
+				E1833D002A01E24800C13200 /* ParentHomeview.swift in Sources */,
+				E1833D552A01E43A00C13200 /* SignupModal.swift in Sources */,
+				E1ABB2F22A01F71400FB4D6D /* Attendance.swift in Sources */,
+				E1833D852A01E50700C13200 /* UserResponse.swift in Sources */,
+				E1833D492A01E40C00C13200 /* OtpModal.swift in Sources */,
+				E15BFCE92A06DC84005F50AA /* Exam.swift in Sources */,
+				E1833D0C2A01E28B00C13200 /* ParentTimetableview.swift in Sources */,
+				E1D7267A2A080A4C00C34EEB /* ParentHomeViewModel.swift in Sources */,
+				E14A7DE12A01D8FA006BA55C /* SchoolspaceApp.swift in Sources */,
+				E1833D692A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A7DEA2A01D8FC006BA55C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1833D5E2A01E47200C13200 /* LoginViewModel.swift in Sources */,
+				E1833D2F2A01E35F00C13200 /* SubjectBox.swift in Sources */,
+				E1833D522A01E42C00C13200 /* Signup.swift in Sources */,
+				E1833D7A2A01E4EF00C13200 /* Subject.swift in Sources */,
+				E1833D822A01E4FF00C13200 /* User.swift in Sources */,
+				E1833D462A01E3FD00C13200 /* Login.swift in Sources */,
+				E1833D2B2A01E35700C13200 /* SearchBar.swift in Sources */,
+				E1833D762A01E4EA00C13200 /* Classroom.swift in Sources */,
+				E1833CF92A01E1E600C13200 /* Splash.swift in Sources */,
+				E1833D272A01E34300C13200 /* ClassroomBox.swift in Sources */,
+				E1833D6E2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */,
+				E1833D052A01E25B00C13200 /* ParentMainview.swift in Sources */,
+				E1833D7E2A01E4F900C13200 /* Timetable.swift in Sources */,
+				E1833D332A01E36600C13200 /* TimetableBox.swift in Sources */,
+				E1833D1E2A01E30B00C13200 /* StudentProfileview.swift in Sources */,
+				E1833D222A01E32000C13200 /* StudentReportview.swift in Sources */,
+				E1833D092A01E27300C13200 /* ParentProfileview.swift in Sources */,
+				E1833D382A01E39800C13200 /* SettingsView.swift in Sources */,
+				E1833D5A2A01E44A00C13200 /* VerifyAccountModal.swift in Sources */,
+				E1833D162A01E2DA00C13200 /* StudentHomeview.swift in Sources */,
+				E1833D122A01E2C500C13200 /* StudentClassroomview.swift in Sources */,
+				E1833D1A2A01E2F500C13200 /* StudentMainview.swift in Sources */,
+				E1833D722A01E4DB00C13200 /* Classe.swift in Sources */,
+				E1833D4E2A01E41D00C13200 /* ResetPasswordView.swift in Sources */,
+				E1833D622A01E48400C13200 /* SignupViewModel.swift in Sources */,
+				E1833D012A01E24800C13200 /* ParentHomeview.swift in Sources */,
+				E1833D562A01E43A00C13200 /* SignupModal.swift in Sources */,
+				E1833D862A01E50700C13200 /* UserResponse.swift in Sources */,
+				E1833D4A2A01E40C00C13200 /* OtpModal.swift in Sources */,
+				E1833D0D2A01E28B00C13200 /* ParentTimetableview.swift in Sources */,
+				E14A7DF32A01D8FC006BA55C /* SchoolspaceTests.swift in Sources */,
+				E1833D6A2A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A7DF42A01D8FC006BA55C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1833D302A01E35F00C13200 /* SubjectBox.swift in Sources */,
+				E1833D632A01E48400C13200 /* SignupViewModel.swift in Sources */,
+				E1833D572A01E43A00C13200 /* SignupModal.swift in Sources */,
+				E1833D1F2A01E30B00C13200 /* StudentProfileview.swift in Sources */,
+				E1833D832A01E4FF00C13200 /* User.swift in Sources */,
+				E14A7DFD2A01D8FC006BA55C /* SchoolspaceUITests.swift in Sources */,
+				E1833D5B2A01E44A00C13200 /* VerifyAccountModal.swift in Sources */,
+				E1833D022A01E24800C13200 /* ParentHomeview.swift in Sources */,
+				E1833D4B2A01E40C00C13200 /* OtpModal.swift in Sources */,
+				E1833D172A01E2DA00C13200 /* StudentHomeview.swift in Sources */,
+				E1833D392A01E39800C13200 /* SettingsView.swift in Sources */,
+				E1833D4F2A01E41D00C13200 /* ResetPasswordView.swift in Sources */,
+				E1833D1B2A01E2F500C13200 /* StudentMainview.swift in Sources */,
+				E1833D132A01E2C500C13200 /* StudentClassroomview.swift in Sources */,
+				E1833D062A01E25B00C13200 /* ParentMainview.swift in Sources */,
+				E1833D2C2A01E35700C13200 /* SearchBar.swift in Sources */,
+				E1833D7F2A01E4F900C13200 /* Timetable.swift in Sources */,
+				E1833CFA2A01E1E600C13200 /* Splash.swift in Sources */,
+				E1833D7B2A01E4EF00C13200 /* Subject.swift in Sources */,
+				E1833D232A01E32000C13200 /* StudentReportview.swift in Sources */,
+				E1833D532A01E42C00C13200 /* Signup.swift in Sources */,
+				E1833D772A01E4EA00C13200 /* Classroom.swift in Sources */,
+				E1833D732A01E4DB00C13200 /* Classe.swift in Sources */,
+				E1833D0A2A01E27300C13200 /* ParentProfileview.swift in Sources */,
+				E1833D0E2A01E28B00C13200 /* ParentTimetableview.swift in Sources */,
+				E1833D342A01E36600C13200 /* TimetableBox.swift in Sources */,
+				E1833D5F2A01E47200C13200 /* LoginViewModel.swift in Sources */,
+				E1833D6B2A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */,
+				E1833D472A01E3FD00C13200 /* Login.swift in Sources */,
+				E1833D282A01E34300C13200 /* ClassroomBox.swift in Sources */,
+				E14A7DFF2A01D8FC006BA55C /* SchoolspaceUITestsLaunchTests.swift in Sources */,
+				E1833D6F2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */,
+				E1833D872A01E50700C13200 /* UserResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E14A7DF02A01D8FC006BA55C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14A7DDC2A01D8FA006BA55C /* Schoolspace */;
+			targetProxy = E14A7DEF2A01D8FC006BA55C /* PBXContainerItemProxy */;
+		};
+		E14A7DFA2A01D8FC006BA55C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14A7DDC2A01D8FA006BA55C /* Schoolspace */;
+			targetProxy = E14A7DF92A01D8FC006BA55C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E14A7E002A01D8FC006BA55C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E14A7E012A01D8FC006BA55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E14A7E032A01D8FC006BA55C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Schoolspace/Schoolspace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = PDA82LW4UR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abbesdev.ios.Schoolspace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E14A7E042A01D8FC006BA55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Schoolspace/Schoolspace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = PDA82LW4UR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abbesdev.ios.Schoolspace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E14A7E062A01D8FC006BA55C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PDA82LW4UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abbesdev.ios.SchoolspaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schoolspace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Schoolspace";
+			};
+			name = Debug;
+		};
+		E14A7E072A01D8FC006BA55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PDA82LW4UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abbesdev.ios.SchoolspaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schoolspace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Schoolspace";
+			};
+			name = Release;
+		};
+		E14A7E092A01D8FC006BA55C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PDA82LW4UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abbesdev.ios.SchoolspaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Schoolspace;
+			};
+			name = Debug;
+		};
+		E14A7E0A2A01D8FC006BA55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PDA82LW4UR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abbesdev.ios.SchoolspaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Schoolspace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E14A7DD82A01D8FA006BA55C /* Build configuration list for PBXProject "Schoolspace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14A7E002A01D8FC006BA55C /* Debug */,
+				E14A7E012A01D8FC006BA55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14A7E022A01D8FC006BA55C /* Build configuration list for PBXNativeTarget "Schoolspace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14A7E032A01D8FC006BA55C /* Debug */,
+				E14A7E042A01D8FC006BA55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14A7E052A01D8FC006BA55C /* Build configuration list for PBXNativeTarget "SchoolspaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14A7E062A01D8FC006BA55C /* Debug */,
+				E14A7E072A01D8FC006BA55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14A7E082A01D8FC006BA55C /* Build configuration list for PBXNativeTarget "SchoolspaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14A7E092A01D8FC006BA55C /* Debug */,
+				E14A7E0A2A01D8FC006BA55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		E19F14CD2A06CB7C00FCEDA3 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E169BFAF2A01DF3100772191 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E169BFB12A01DF3100772191 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		E169BFB32A01DF3100772191 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E169BFB52A01DF3100772191 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		E169BFB72A01DF3100772191 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E169BFB92A01DF3100772191 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E169BFBB2A01DF3100772191 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		E169BFBD2A01DF3100772191 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		E169BFBF2A01DF3100772191 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		E169BFC12A01DF3100772191 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E169BFC32A01DF3100772191 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E169BFAE2A01DF3100772191 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		E19F14CE2A06CB7C00FCEDA3 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19F14CD2A06CB7C00FCEDA3 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		E19F14D02A06CB7C00FCEDA3 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19F14CD2A06CB7C00FCEDA3 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E14A7DD52A01D8FA006BA55C /* Project object */;
+}
