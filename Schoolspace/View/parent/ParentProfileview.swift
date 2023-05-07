@@ -52,22 +52,19 @@ struct ParentProfileView: View {
                Text("No name fetched")
             }
             if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
-               let createdAtString = parentResponse["createdAt"] as? String,
-               let createdAt = ISO8601DateFormatter().date(from: createdAtString) {
-                   
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd"
-                let formattedDate = dateFormatter.string(from: createdAt)
-                
-                Text("Member since \(formattedDate)")
-                    .font(.subheadline)
-                    .padding(.bottom, 20)
-            } else {
-                Text("Member since 2023")
-                    .font(.subheadline)
+               let createdAt = parentResponse["createdAt"] as? String
+               
+            {
+                Text("Member since \(createdAt)").font(.subheadline)
                     .padding(.bottom, 20)
             }
-
+            
+            else
+        
+            {
+                Text("Member since 2023").font(.subheadline)
+                    .padding(.bottom, 20)
+            }
             
             Form {
                 Section(header: Text("App preferences").font(.subheadline)) {
