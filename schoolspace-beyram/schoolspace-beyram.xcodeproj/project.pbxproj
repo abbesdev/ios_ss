@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42E5CF312A07F3230071EBB6 /* classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5CF302A07F3230071EBB6 /* classes.swift */; };
+		42E5CF332A0805920071EBB6 /* timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5CF322A0805920071EBB6 /* timeslot.swift */; };
+		42E5CF352A080A460071EBB6 /* clesses2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5CF342A080A460071EBB6 /* clesses2.swift */; };
+		42E5CF372A0827530071EBB6 /* subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5CF362A0827530071EBB6 /* subject.swift */; };
+		4367EED02A167A8100475FB0 /* student2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4367EECF2A167A8100475FB0 /* student2.swift */; };
+		436B08F12A129396007D8433 /* quizitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B08F02A129396007D8433 /* quizitem.swift */; };
+		436B08F32A12A1C8007D8433 /* quizview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B08F22A12A1C8007D8433 /* quizview.swift */; };
+		439B6ADD2A154E4D002C606F /* questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439B6ADC2A154E4C002C606F /* questions.swift */; };
+		43D95ADC2A09745C00B53DF3 /* studentmainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95ADB2A09745C00B53DF3 /* studentmainview.swift */; };
+		43D95ADE2A0978A300B53DF3 /* studenthomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95ADD2A0978A300B53DF3 /* studenthomeview.swift */; };
+		43D95AE02A099E2000B53DF3 /* quizsingleitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95ADF2A099E2000B53DF3 /* quizsingleitem.swift */; };
+		43D95AE22A09AB3600B53DF3 /* quizlistview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AE12A09AB3600B53DF3 /* quizlistview.swift */; };
+		43D95AE42A09B06700B53DF3 /* quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AE32A09B06700B53DF3 /* quiz.swift */; };
+		43D95AE62A09D2EF00B53DF3 /* performanceview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AE52A09D2EF00B53DF3 /* performanceview.swift */; };
+		43D95AE82A09D3EB00B53DF3 /* quizmarkitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AE72A09D3EB00B53DF3 /* quizmarkitem.swift */; };
+		43D95AEA2A09EA5A00B53DF3 /* eventitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AE92A09EA5A00B53DF3 /* eventitem.swift */; };
+		43D95AEC2A09F1E700B53DF3 /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AEB2A09F1E700B53DF3 /* event.swift */; };
+		43D95AEE2A09F24900B53DF3 /* eventview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D95AED2A09F24900B53DF3 /* eventview.swift */; };
+		59C4F4BE2A0681FF00E68484 /* adminmainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4F4BD2A0681FF00E68484 /* adminmainController.swift */; };
+		59C4F4C02A06827D00E68484 /* usercount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4F4BF2A06827D00E68484 /* usercount.swift */; };
+		59C4F4C22A06DF1C00E68484 /* timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4F4C12A06DF1C00E68484 /* timetable.swift */; };
+		7A22BB9F29FEC082004A8B0E /* parents_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BB9E29FEC082004A8B0E /* parents_view.swift */; };
+		7A22BBA129FEC092004A8B0E /* teachers_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BBA029FEC092004A8B0E /* teachers_view.swift */; };
+		7A22BBA329FEC5EA004A8B0E /* singleitem_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BBA229FEC5EA004A8B0E /* singleitem_view.swift */; };
+		7A22BBA929FEC9BA004A8B0E /* student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BBA829FEC9BA004A8B0E /* student.swift */; };
+		7A22BBAB29FEE0BF004A8B0E /* singleitemnotverified_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BBAA29FEE0BF004A8B0E /* singleitemnotverified_view.swift */; };
+		7A22BBAD29FEF216004A8B0E /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BBAC29FEF216004A8B0E /* menu.swift */; };
+		7A22BBB029FEFF28004A8B0E /* timetable_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22BBAF29FEFF28004A8B0E /* timetable_view.swift */; };
+		7A250F9F2A012C3C00608591 /* singleitemcalendar_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A250F9E2A012C3C00608591 /* singleitemcalendar_view.swift */; };
+		7A250FA12A012D5200608591 /* class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A250FA02A012D5200608591 /* class.swift */; };
+		7A250FA32A013BA000608591 /* timetabledetails_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A250FA22A013BA000608591 /* timetabledetails_view.swift */; };
+		7A9FCEF229F987BF00E2E91F /* students_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9FCEF129F987BF00E2E91F /* students_view.swift */; };
+		7AA961312A0009F000CA4FBD /* testt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA961302A0009F000CA4FBD /* testt.swift */; };
+		7ACF052F2A0254E500DC16D7 /* parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF052E2A0254E500DC16D7 /* parent.swift */; };
+		7ACF05312A02568800DC16D7 /* home_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF05302A02568800DC16D7 /* home_view.swift */; };
+		7AEDBC4129F95915009E1DB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDBC4029F95915009E1DB2 /* AppDelegate.swift */; };
+		7AEDBC4329F95915009E1DB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDBC4229F95915009E1DB2 /* SceneDelegate.swift */; };
+		7AEDBC4529F95915009E1DB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDBC4429F95915009E1DB2 /* ViewController.swift */; };
+		7AEDBC4B29F95915009E1DB2 /* schoolspace_beyram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDBC4929F95915009E1DB2 /* schoolspace_beyram.xcdatamodeld */; };
+		7AEDBC4D29F95915009E1DB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AEDBC4C29F95915009E1DB2 /* Assets.xcassets */; };
+		7AEDBC5029F95915009E1DB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AEDBC4E29F95915009E1DB2 /* LaunchScreen.storyboard */; };
+		7AEDBC5929F95A72009E1DB2 /* admin_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDBC5829F95A72009E1DB2 /* admin_view.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42E5CF302A07F3230071EBB6 /* classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classes.swift; sourceTree = "<group>"; };
+		42E5CF322A0805920071EBB6 /* timeslot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeslot.swift; sourceTree = "<group>"; };
+		42E5CF342A080A460071EBB6 /* clesses2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clesses2.swift; sourceTree = "<group>"; };
+		42E5CF362A0827530071EBB6 /* subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subject.swift; sourceTree = "<group>"; };
+		4367EECF2A167A8100475FB0 /* student2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = student2.swift; sourceTree = "<group>"; };
+		436B08F02A129396007D8433 /* quizitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizitem.swift; sourceTree = "<group>"; };
+		436B08F22A12A1C8007D8433 /* quizview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizview.swift; sourceTree = "<group>"; };
+		439B6ADC2A154E4C002C606F /* questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questions.swift; sourceTree = "<group>"; };
+		43D95ADB2A09745C00B53DF3 /* studentmainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentmainview.swift; sourceTree = "<group>"; };
+		43D95ADD2A0978A300B53DF3 /* studenthomeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studenthomeview.swift; sourceTree = "<group>"; };
+		43D95ADF2A099E2000B53DF3 /* quizsingleitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizsingleitem.swift; sourceTree = "<group>"; };
+		43D95AE12A09AB3600B53DF3 /* quizlistview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizlistview.swift; sourceTree = "<group>"; };
+		43D95AE32A09B06700B53DF3 /* quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz.swift; sourceTree = "<group>"; };
+		43D95AE52A09D2EF00B53DF3 /* performanceview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceview.swift; sourceTree = "<group>"; };
+		43D95AE72A09D3EB00B53DF3 /* quizmarkitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizmarkitem.swift; sourceTree = "<group>"; };
+		43D95AE92A09EA5A00B53DF3 /* eventitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventitem.swift; sourceTree = "<group>"; };
+		43D95AEB2A09F1E700B53DF3 /* event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
+		43D95AED2A09F24900B53DF3 /* eventview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventview.swift; sourceTree = "<group>"; };
+		59C4F4BD2A0681FF00E68484 /* adminmainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminmainController.swift; sourceTree = "<group>"; };
+		59C4F4BF2A06827D00E68484 /* usercount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usercount.swift; sourceTree = "<group>"; };
+		59C4F4C12A06DF1C00E68484 /* timetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetable.swift; sourceTree = "<group>"; };
+		7A22BB9E29FEC082004A8B0E /* parents_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parents_view.swift; sourceTree = "<group>"; };
+		7A22BBA029FEC092004A8B0E /* teachers_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teachers_view.swift; sourceTree = "<group>"; };
+		7A22BBA229FEC5EA004A8B0E /* singleitem_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitem_view.swift; sourceTree = "<group>"; };
+		7A22BBA829FEC9BA004A8B0E /* student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = student.swift; sourceTree = "<group>"; };
+		7A22BBAA29FEE0BF004A8B0E /* singleitemnotverified_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitemnotverified_view.swift; sourceTree = "<group>"; };
+		7A22BBAC29FEF216004A8B0E /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		7A22BBAF29FEFF28004A8B0E /* timetable_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetable_view.swift; sourceTree = "<group>"; };
+		7A250F9E2A012C3C00608591 /* singleitemcalendar_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitemcalendar_view.swift; sourceTree = "<group>"; };
+		7A250FA02A012D5200608591 /* class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = class.swift; sourceTree = "<group>"; };
+		7A250FA22A013BA000608591 /* timetabledetails_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetabledetails_view.swift; sourceTree = "<group>"; };
+		7A9FCEF129F987BF00E2E91F /* students_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = students_view.swift; sourceTree = "<group>"; };
+		7AA961302A0009F000CA4FBD /* testt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testt.swift; sourceTree = "<group>"; };
+		7ACF052E2A0254E500DC16D7 /* parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parent.swift; sourceTree = "<group>"; };
+		7ACF05302A02568800DC16D7 /* home_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_view.swift; sourceTree = "<group>"; };
+		7AEDBC3D29F95915009E1DB2 /* schoolspace-beyram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "schoolspace-beyram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEDBC4029F95915009E1DB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AEDBC4229F95915009E1DB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7AEDBC4429F95915009E1DB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AEDBC4A29F95915009E1DB2 /* schoolspace_beyram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = schoolspace_beyram.xcdatamodel; sourceTree = "<group>"; };
+		7AEDBC4C29F95915009E1DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AEDBC4F29F95915009E1DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AEDBC5129F95915009E1DB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AEDBC5829F95A72009E1DB2 /* admin_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_view.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AEDBC3A29F95915009E1DB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43D95AD92A09696900B53DF3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		43D95ADA2A09697A00B53DF3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				43D95ADB2A09745C00B53DF3 /* studentmainview.swift */,
+				43D95ADD2A0978A300B53DF3 /* studenthomeview.swift */,
+				43D95ADF2A099E2000B53DF3 /* quizsingleitem.swift */,
+				43D95AE12A09AB3600B53DF3 /* quizlistview.swift */,
+				43D95AE52A09D2EF00B53DF3 /* performanceview.swift */,
+				43D95AE72A09D3EB00B53DF3 /* quizmarkitem.swift */,
+				43D95AE92A09EA5A00B53DF3 /* eventitem.swift */,
+				43D95AED2A09F24900B53DF3 /* eventview.swift */,
+				436B08F02A129396007D8433 /* quizitem.swift */,
+				436B08F22A12A1C8007D8433 /* quizview.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		59C4F4BC2A0681E200E68484 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D95AD92A09696900B53DF3 /* New Group */,
+				59C4F4BD2A0681FF00E68484 /* adminmainController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		7A22BBA729FEC996004A8B0E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7A22BBA829FEC9BA004A8B0E /* student.swift */,
+				7A250FA02A012D5200608591 /* class.swift */,
+				59C4F4BF2A06827D00E68484 /* usercount.swift */,
+				59C4F4C12A06DF1C00E68484 /* timetable.swift */,
+				42E5CF302A07F3230071EBB6 /* classes.swift */,
+				42E5CF322A0805920071EBB6 /* timeslot.swift */,
+				42E5CF342A080A460071EBB6 /* clesses2.swift */,
+				42E5CF362A0827530071EBB6 /* subject.swift */,
+				43D95AE32A09B06700B53DF3 /* quiz.swift */,
+				43D95AEB2A09F1E700B53DF3 /* event.swift */,
+				439B6ADC2A154E4C002C606F /* questions.swift */,
+				4367EECF2A167A8100475FB0 /* student2.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7AEDBC3429F95915009E1DB2 = {
+			isa = PBXGroup;
+			children = (
+				7AEDBC3F29F95915009E1DB2 /* schoolspace-beyram */,
+				7AEDBC3E29F95915009E1DB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AEDBC3E29F95915009E1DB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AEDBC3D29F95915009E1DB2 /* schoolspace-beyram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AEDBC3F29F95915009E1DB2 /* schoolspace-beyram */ = {
+			isa = PBXGroup;
+			children = (
+				43D95ADA2A09697A00B53DF3 /* New Group */,
+				59C4F4BC2A0681E200E68484 /* controllers */,
+				7A22BBA729FEC996004A8B0E /* models */,
+				7AEDBC5729F95A57009E1DB2 /* screens */,
+				7AEDBC4029F95915009E1DB2 /* AppDelegate.swift */,
+				7AEDBC4229F95915009E1DB2 /* SceneDelegate.swift */,
+				7AEDBC4429F95915009E1DB2 /* ViewController.swift */,
+				7AEDBC4C29F95915009E1DB2 /* Assets.xcassets */,
+				7AEDBC4E29F95915009E1DB2 /* LaunchScreen.storyboard */,
+				7AEDBC5129F95915009E1DB2 /* Info.plist */,
+				7AEDBC4929F95915009E1DB2 /* schoolspace_beyram.xcdatamodeld */,
+			);
+			path = "schoolspace-beyram";
+			sourceTree = "<group>";
+		};
+		7AEDBC5729F95A57009E1DB2 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				7AEDBC5829F95A72009E1DB2 /* admin_view.swift */,
+				7A9FCEF129F987BF00E2E91F /* students_view.swift */,
+				7A22BB9E29FEC082004A8B0E /* parents_view.swift */,
+				7A22BBA029FEC092004A8B0E /* teachers_view.swift */,
+				7A22BBA229FEC5EA004A8B0E /* singleitem_view.swift */,
+				7A22BBAA29FEE0BF004A8B0E /* singleitemnotverified_view.swift */,
+				7A22BBAC29FEF216004A8B0E /* menu.swift */,
+				7A22BBAF29FEFF28004A8B0E /* timetable_view.swift */,
+				7AA961302A0009F000CA4FBD /* testt.swift */,
+				7A250F9E2A012C3C00608591 /* singleitemcalendar_view.swift */,
+				7A250FA22A013BA000608591 /* timetabledetails_view.swift */,
+				7ACF052E2A0254E500DC16D7 /* parent.swift */,
+				7ACF05302A02568800DC16D7 /* home_view.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AEDBC3C29F95915009E1DB2 /* schoolspace-beyram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AEDBC5429F95915009E1DB2 /* Build configuration list for PBXNativeTarget "schoolspace-beyram" */;
+			buildPhases = (
+				7AEDBC3929F95915009E1DB2 /* Sources */,
+				7AEDBC3A29F95915009E1DB2 /* Frameworks */,
+				7AEDBC3B29F95915009E1DB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "schoolspace-beyram";
+			productName = "schoolspace-beyram";
+			productReference = 7AEDBC3D29F95915009E1DB2 /* schoolspace-beyram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AEDBC3529F95915009E1DB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					7AEDBC3C29F95915009E1DB2 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7AEDBC3829F95915009E1DB2 /* Build configuration list for PBXProject "schoolspace-beyram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AEDBC3429F95915009E1DB2;
+			productRefGroup = 7AEDBC3E29F95915009E1DB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AEDBC3C29F95915009E1DB2 /* schoolspace-beyram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AEDBC3B29F95915009E1DB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEDBC5029F95915009E1DB2 /* LaunchScreen.storyboard in Resources */,
+				7AEDBC4D29F95915009E1DB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AEDBC3929F95915009E1DB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEDBC5929F95A72009E1DB2 /* admin_view.swift in Sources */,
+				7AEDBC4529F95915009E1DB2 /* ViewController.swift in Sources */,
+				4367EED02A167A8100475FB0 /* student2.swift in Sources */,
+				42E5CF332A0805920071EBB6 /* timeslot.swift in Sources */,
+				7A22BBAD29FEF216004A8B0E /* menu.swift in Sources */,
+				42E5CF372A0827530071EBB6 /* subject.swift in Sources */,
+				7ACF052F2A0254E500DC16D7 /* parent.swift in Sources */,
+				7A250FA32A013BA000608591 /* timetabledetails_view.swift in Sources */,
+				43D95AEE2A09F24900B53DF3 /* eventview.swift in Sources */,
+				7A250F9F2A012C3C00608591 /* singleitemcalendar_view.swift in Sources */,
+				7A22BB9F29FEC082004A8B0E /* parents_view.swift in Sources */,
+				43D95AE82A09D3EB00B53DF3 /* quizmarkitem.swift in Sources */,
+				43D95AE42A09B06700B53DF3 /* quiz.swift in Sources */,
+				7AEDBC4129F95915009E1DB2 /* AppDelegate.swift in Sources */,
+				7AEDBC4B29F95915009E1DB2 /* schoolspace_beyram.xcdatamodeld in Sources */,
+				436B08F12A129396007D8433 /* quizitem.swift in Sources */,
+				43D95AE22A09AB3600B53DF3 /* quizlistview.swift in Sources */,
+				59C4F4C22A06DF1C00E68484 /* timetable.swift in Sources */,
+				43D95AE02A099E2000B53DF3 /* quizsingleitem.swift in Sources */,
+				7A9FCEF229F987BF00E2E91F /* students_view.swift in Sources */,
+				59C4F4BE2A0681FF00E68484 /* adminmainController.swift in Sources */,
+				59C4F4C02A06827D00E68484 /* usercount.swift in Sources */,
+				43D95AEA2A09EA5A00B53DF3 /* eventitem.swift in Sources */,
+				7ACF05312A02568800DC16D7 /* home_view.swift in Sources */,
+				43D95ADC2A09745C00B53DF3 /* studentmainview.swift in Sources */,
+				7A22BBB029FEFF28004A8B0E /* timetable_view.swift in Sources */,
+				7AEDBC4329F95915009E1DB2 /* SceneDelegate.swift in Sources */,
+				43D95AEC2A09F1E700B53DF3 /* event.swift in Sources */,
+				7A22BBA129FEC092004A8B0E /* teachers_view.swift in Sources */,
+				439B6ADD2A154E4D002C606F /* questions.swift in Sources */,
+				42E5CF352A080A460071EBB6 /* clesses2.swift in Sources */,
+				7AA961312A0009F000CA4FBD /* testt.swift in Sources */,
+				7A250FA12A012D5200608591 /* class.swift in Sources */,
+				43D95ADE2A0978A300B53DF3 /* studenthomeview.swift in Sources */,
+				7A22BBA329FEC5EA004A8B0E /* singleitem_view.swift in Sources */,
+				42E5CF312A07F3230071EBB6 /* classes.swift in Sources */,
+				43D95AE62A09D2EF00B53DF3 /* performanceview.swift in Sources */,
+				7A22BBAB29FEE0BF004A8B0E /* singleitemnotverified_view.swift in Sources */,
+				7A22BBA929FEC9BA004A8B0E /* student.swift in Sources */,
+				436B08F32A12A1C8007D8433 /* quizview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7AEDBC4E29F95915009E1DB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AEDBC4F29F95915009E1DB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AEDBC5229F95915009E1DB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AEDBC5329F95915009E1DB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AEDBC5529F95915009E1DB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "schoolspace-beyram/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = testt.swift;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devsec.schoolspace-beyram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AEDBC5629F95915009E1DB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "schoolspace-beyram/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = testt.swift;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devsec.schoolspace-beyram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AEDBC3829F95915009E1DB2 /* Build configuration list for PBXProject "schoolspace-beyram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AEDBC5229F95915009E1DB2 /* Debug */,
+				7AEDBC5329F95915009E1DB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AEDBC5429F95915009E1DB2 /* Build configuration list for PBXNativeTarget "schoolspace-beyram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AEDBC5529F95915009E1DB2 /* Debug */,
+				7AEDBC5629F95915009E1DB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AEDBC4929F95915009E1DB2 /* schoolspace_beyram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AEDBC4A29F95915009E1DB2 /* schoolspace_beyram.xcdatamodel */,
+			);
+			currentVersion = 7AEDBC4A29F95915009E1DB2 /* schoolspace_beyram.xcdatamodel */;
+			path = schoolspace_beyram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7AEDBC3529F95915009E1DB2 /* Project object */;
+}
