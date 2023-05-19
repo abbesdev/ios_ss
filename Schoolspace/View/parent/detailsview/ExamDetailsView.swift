@@ -105,7 +105,7 @@ class ExamDetailsViewModel: ObservableObject {
     @Published var showSheet = false
     
     func fetchExamDetails(examId: String) {
-        let urlString = "http://localhost:8080/exam/examId/\(examId)"
+        let urlString = "https://backspace-gamma.vercel.app/exam/examId/\(examId)"
         guard let url = URL(string: urlString) else {
             fatalError("Invalid URL: \(urlString)")
         }

@@ -12,6 +12,7 @@ struct TeacherResponse: Decodable {
     let verified: Bool
     let id: String
     let firstName: String
+    let subject: String
     let lastName: String
     let phoneNumber: String
     let profilePhoto: String
@@ -27,6 +28,7 @@ struct TeacherResponse: Decodable {
         case verified
         case id = "_id"
         case firstName
+        case subject
         case lastName
         case phoneNumber
         case profilePhoto

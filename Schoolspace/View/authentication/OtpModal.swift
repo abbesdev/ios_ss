@@ -14,58 +14,86 @@ struct OtpModal: View {
     @State private var isVerifyModalShown1 = false
     @State private var selectedOption = 1
     @State private var otp = ""
+    @State var viewModel = SignupViewModel()
 
 
   
     var body: some View {
-        VStack (alignment:.center, spacing: 8){
-            
-            Image("icon_exit")
-                .padding(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .onTapGesture(perform: {
-                    self.presentationMode.wrappedValue.dismiss()
-                    
-                })
-            
-            
-            Text("Verify your account step 2")
-                .padding(.leading) .frame(maxWidth: .infinity, alignment: .leading)
-                .fontWeight(.bold)
-            
-            Text("Please type in the received otp code")
-                .padding(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .fontWeight(.light)
-          
-           
-            PasscodeField { otp, completionHandler in
-                     
-                            completionHandler(true)
-                        }
-            .padding(20)
-                    
+
+            VStack (alignment:.center, spacing: 8){
                 
-              
-              
-            
-           Spacer()
-            Button(action: {  }) {
-                // 1
-                Text("Finish set up")
-                    .frame(maxWidth: .infinity)
-                    .padding()
+                Image("icon_exit")
+                    .padding(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .onTapGesture(perform: {
+                        self.presentationMode.wrappedValue.dismiss()
+                        
+                    })
+                
+                
+                Text("Verify your account step 2")
+                    .padding(.leading) .frame(maxWidth: .infinity, alignment: .leading)
+                    .fontWeight(.bold)
+                
+                Text("Please type in the received otp code")
+                    .padding(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .fontWeight(.light)
+                
+                
+                PasscodeField(pin: Binding(projectedValue: $otp)) { pin, completionHandler in
+                    if pin == UserDefaults.standard.string(forKey: "otp") {
+                        // The PIN matches the OTP, call the view model function to verify the user
+                        
+                        completionHandler(true)
+                    } else {
+                        // The PIN does not match, clear the input
+                        
+                        completionHandler(false)
+                    }
+                }
+                .padding(20)
+                
+                
+                
+                
+                
+                Spacer()
+                Button(action: {
+                    if otp == UserDefaults.standard.string(forKey: "otp") {
+                        // The OTP matches the PIN, call the view model function to verify the user
+                        viewModel.verifyUser()
+                        print("trigger condiftion")
+                        if viewModel.redirectToLogin == true {
+                                   // Dismiss all previous sheets
+                                   presentationMode.wrappedValue.dismiss()
+                                 
+                               }
+                        
+                        
+                    } else {
+                        // The OTP does not match the PIN, show an error message
+                        print("Invalid OTP")
+                    }
+                    print("trigger outside")
+                }) {
+                    Text("Finish set up")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                }
+                .foregroundColor(.white)
+                .background(Color(0xFF016DB1))
+                .cornerRadius(10)
+                .padding()
+
+                
+                
             }
-            .foregroundColor(.white) // 2
-            .background(Color(0xFF016DB1))
-            .cornerRadius(10) // 4
-            .padding()
-            
-            
+            .padding(.top,16)
         }
-        .padding(.top,16)
         
-    }
+    
+    
 }
 
 struct OtpModal_Previews: PreviewProvider {
@@ -81,7 +109,7 @@ public struct PasscodeField: View {
     var maxDigits: Int = 4
     var label = "Enter the otp code sent to you"
     
-    @State var pin: String = ""
+    @Binding var pin: String // Use Binding instead of State
     @State var showPin = false
     @State var isDisabled = false
     
@@ -167,12 +195,12 @@ public struct PasscodeField: View {
         if pin.count == maxDigits {
             isDisabled = true
             
-            handler(pin) { isSuccess in
+            handler(self.pin) { isSuccess in
                 if isSuccess {
                     print("pin matched, go to next page, no action to perfrom here")
                 } else {
-                    pin = ""
-                    isDisabled = false
+                    // clear the pin field
+                   
                     print("this has to called after showing toast why is the failure")
                 }
             }
@@ -185,8 +213,11 @@ public struct PasscodeField: View {
             submitPin()
         }
     }
+
+
     
     private func getImageName(at index: Int) -> String {
+
         if index >= self.pin.count {
             return "circle"
         }

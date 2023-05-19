@@ -6,12 +6,12 @@ class ParentHomeViewModel: ObservableObject  {
 
     // MARK: - Properties
     
-    private let baseURL = "http://localhost:8080"
+    private let baseURL = "https://backspace-gamma.vercel.app"
     
     // MARK: - Functions
     
     func getUserById(id: String) {
-        let url = URL(string: "http://localhost:8080/users/\(id)")!
+        let url = URL(string: "https://backspace-gamma.vercel.app/users/\(id)")!
 
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
@@ -27,7 +27,7 @@ class ParentHomeViewModel: ObservableObject  {
         }.resume()
     }
     func getClasseById(id: String) {
-        let url = URL(string: "http://localhost:8080/class/\(id)")!
+        let url = URL(string: "https://backspace-gamma.vercel.app/class/\(id)")!
 
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {

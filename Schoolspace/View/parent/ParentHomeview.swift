@@ -49,7 +49,7 @@ struct ParentHomeView: View {
                                                        .font(.subheadline)
                                                        .foregroundColor(.white)
                                                        .onAppear {
-                                                           viewModelHome.getClasseById(id: user.className)
+                                                           viewModelHome.getClasseById(id: user.className ?? "not assigned")
                                                        }
                                                }
                                            } else {
@@ -99,14 +99,14 @@ struct ParentHomeView: View {
 
                             Spacer()
 
-                            Text("50%")
+                            Text("66%")
                                 .font(.subheadline)
                                 .foregroundColor(.white)
 
                                 
                         }
                         HStack{
-                            ProgressBar(progress: 0.5)
+                            ProgressBar(progress: 0.66)
 
                         }
                            }
@@ -131,7 +131,11 @@ struct ParentHomeView: View {
              
                                 }
                                 .sheet(isPresented: $modalAttendance) {
-                                    AttendanceView()
+                                    if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
+                                       let child = parentResponse["child"] as? [String],
+                                       let childName = child.first {
+                                        AttendanceView(selectedStudent:  childName)
+                                    }
                                 }
                             
                               Spacer()
@@ -161,7 +165,7 @@ struct ParentHomeView: View {
                                 }
                             Spacer()
 
-                            Image("ccc")
+                            
                              
                         }
                        

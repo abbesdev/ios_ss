@@ -15,6 +15,7 @@ struct Login: View {
     @State private var isResetPasswordModalShown = false
 
     @StateObject var viewModel = LoginViewModel()
+    @StateObject var viewModelOtp = SignupViewModel()
     @State private var isOn = false
     @State private var willMoveToNextScreen = false
     var body: some View {
@@ -99,11 +100,24 @@ struct Login: View {
                         ParentMainView()
                     }
                     .fullScreenCover(isPresented: self.$viewModel.loggedInStudent){
-                        StudentMainView()
+                        student()
                     }
                     .fullScreenCover(isPresented: self.$viewModel.loggedInTeacher){
                         TeacherMainView()
                     }
+                    .fullScreenCover(isPresented: self.$viewModel.loggedInNotParent){
+                        ParentForm()
+                    }
+                    .fullScreenCover(isPresented: self.$viewModel.loggedInNotStudent){
+                        StudentForm()
+                    }
+                    .fullScreenCover(isPresented: self.$viewModel.loggedInNotTeacher){
+                        TeacherForm()
+                    }
+                    .fullScreenCover(isPresented: self.$viewModel.loggedInAdmin){
+                        MonthCalendarView()
+                    }
+                    
                     
                   
                     HStack(spacing: 0) {
@@ -133,6 +147,7 @@ struct Login: View {
                            viewModel.loginUser(email: email, password: password)
                        }
                    }
+
     }
 }
 extension Color {

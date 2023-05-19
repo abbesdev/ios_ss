@@ -85,37 +85,37 @@ struct SignupModal: View {
                                 print("Error uploading profile photo: \(error.localizedDescription)")
                             }
                         }
-
+                        
                     }
                 }
-
+                
                 VStack{
                     Text("Phone number").padding(.leading) .frame(maxWidth: .infinity, alignment: .leading)
                         .fontWeight(.regular)
                     
                     HStack {
-                                    Picker("", selection: $selectedCountry) {
-                                        ForEach(countries, id: \.self) { country in
-                                            Text(country)
-                                        }
-                                    }
-                                    .frame(width: 100)
-                                    .clipped()
-                                    .padding(.leading, 0)
-                                    
-                                    TextField(
-                                        "type in your phone number",
-                                        text: $givenPn
-                                    )
-                                    .frame(height: 50)
-                                    .padding(.leading, 16)
-                                    .cornerRadius(5)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
-                                            .stroke(Color(0xFFC5C6CC), lineWidth: 1.0)
-                                    )
-                                }
-                                .padding(.horizontal, 16)
+                        Picker("", selection: $selectedCountry) {
+                            ForEach(countries, id: \.self) { country in
+                                Text(country)
+                            }
+                        }
+                        .frame(width: 100)
+                        .clipped()
+                        .padding(.leading, 0)
+                        
+                        TextField(
+                            "type in your phone number",
+                            text: $givenPn
+                        )
+                        .frame(height: 50)
+                        .padding(.leading, 16)
+                        .cornerRadius(5)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .stroke(Color(0xFFC5C6CC), lineWidth: 1.0)
+                        )
+                    }
+                    .padding(.horizontal, 16)
                     
                 }
                 
@@ -145,28 +145,28 @@ struct SignupModal: View {
                         .fontWeight(.regular)
                     
                     DatePicker(
-                                    "Date of birth :",
-                                    selection: $givenDb,
-                                    in: ...Date(),
-                                    displayedComponents: [.date]
-                                )
-                                .datePickerStyle(.compact)
-                                .frame(height: 50)
-                                .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                                .cornerRadius(5)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .stroke(Color(0xFFC5C6CC), lineWidth: 1.0)
-                                )
-                                .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                        "Date of birth :",
+                        selection: $givenDb,
+                        in: ...Date(),
+                        displayedComponents: [.date]
+                    )
+                    .datePickerStyle(.compact)
+                    .frame(height: 50)
+                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                    .cornerRadius(5)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color(0xFFC5C6CC), lineWidth: 1.0)
+                    )
+                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 }
-
+                
                 VStack {
                     Text("Role type")
                         .padding(.leading)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .fontWeight(.regular)
-
+                    
                     Picker(selection: $givenRt, label: Text("Select your role type")) {
                         Text("Teacher").tag("Teacher")
                         Text("Student").tag("Student")
@@ -184,7 +184,7 @@ struct SignupModal: View {
                     )
                     .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 }
-
+                
                 
             }
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
@@ -206,13 +206,15 @@ struct SignupModal: View {
             .cornerRadius(10) // 4
             .padding()
             .sheet(isPresented:
-            $isVerifyModalShown) {
-                VerifyAccountModal()
+                    $isVerifyModalShown) {
+                OtpModal()
             }
+                   
             
         }
         .padding(.top,16)
         
+    
     }
     func uploadImageToFirebaseStorage(image: UIImage, completion: @escaping (Result<String, Error>) -> Void) {
            guard let imageData = image.jpegData(compressionQuality: 0.5) else {

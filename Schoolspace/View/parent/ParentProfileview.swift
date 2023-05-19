@@ -25,17 +25,17 @@ struct ParentProfileView: View {
                let profilePhoto = parentResponse["profilePhoto"] as? String {
                 AsyncImage(url: URL(string: profilePhoto)) { image in
                     image.resizable()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 80, height: 80)
                         .clipShape(Circle())
                 } placeholder: {
                     Image(systemName: "person.circle")
                         .resizable()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 80, height: 80)
                 }
             } else {
                 Image(systemName: "person.circle")
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 80, height: 80)
             }
 
         
@@ -52,19 +52,22 @@ struct ParentProfileView: View {
                Text("No name fetched")
             }
             if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
-               let createdAt = parentResponse["createdAt"] as? String
-               
-            {
-                Text("Member since \(createdAt)").font(.subheadline)
-                    .padding(.bottom, 20)
-            }
-            
-            else
-        
-            {
+               let createdAt = parentResponse["createdAt"] as? String {
+                
+                let dateParts = createdAt.components(separatedBy: "T")
+                if dateParts.count > 0 {
+                    let date = dateParts[0]
+                    Text("Member since \(date)").font(.subheadline)
+                        .padding(.bottom, 20)
+                } else {
+                    Text("Member since 2023").font(.subheadline)
+                        .padding(.bottom, 20)
+                }
+            } else {
                 Text("Member since 2023").font(.subheadline)
                     .padding(.bottom, 20)
             }
+
             
             Form {
                 Section(header: Text("App preferences").font(.subheadline)) {
@@ -103,70 +106,111 @@ struct ParentProfileView: View {
                 }
                 Section(header: Text("Profile preferences")) {
                    
-                    HStack{
+                    HStack {
                         Label("First Name", systemImage: "person")
                             .foregroundColor(.black)
                             .font(.subheadline)
-
                             .offset(x: 0, y: 0)
                             .padding(.horizontal, 1)
-                        TextField("First Name", text: $firstName)
+                        
+                        if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
+                           let firstName = parentResponse["firstName"] as? String {
+                            
+                            TextField("First Name", text: Binding(get: {
+                                firstName
+                            }, set: { value in
+                                // You may want to update the parentResponse dictionary with the new value here
+                            }))
                             .textFieldStyle(.roundedBorder)
                             .padding(.vertical, 1)
                             .padding(.horizontal, 1)
-                        
-                        
-                        
-                        
+                            
+                        } else {
+                            TextField("First Name", text: $firstName)
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.vertical, 1)
+                            .padding(.horizontal, 1)
+                        }
                     }
-                    HStack{
+
+                    HStack {
                         Label("Last Name", systemImage: "person")
                             .foregroundColor(.black)
                             .font(.subheadline)
-
                             .offset(x: 0, y: 0)
                             .padding(.horizontal, 1)
-                        TextField("First Name", text: $lastName)
+                        
+                        if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
+                           let lastName = parentResponse["lastName"] as? String {
+                            
+                            TextField("Last Name", text: Binding(get: {
+                                lastName
+                            }, set: { value in
+                                // You may want to update the parentResponse dictionary with the new value here
+                            }))
                             .textFieldStyle(.roundedBorder)
                             .padding(.vertical, 1)
                             .padding(.horizontal, 1)
-                        
-                        
-                        
-                        
+                            
+                        } else {
+                            TextField("Last Name", text: $lastName)
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.vertical, 1)
+                            .padding(.horizontal, 1)
+                        }
                     }
-                    HStack{
-                        Label("Phone Number", systemImage: "phone")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
-                            .offset(x: 0, y: 0)
-                            .padding(.horizontal, 1)
-                        
-                        TextField("First Name", text: $phoneNumber)
-                            .textFieldStyle(.roundedBorder)
-                            .padding(.vertical, 1)
-                            .padding(.horizontal, 1)
-                            .padding(.horizontal, 2)
-                        
-                        
-                        
-                        
-                    }
-                    HStack{
-                        Label("Password", systemImage: "lock")
-                            .foregroundColor(.black)
-                            .offset(x: 0, y: 0)
-                            .font(.subheadline)
 
+                    HStack {
+                        Label("Phone number", systemImage: "person")
+                            .foregroundColor(.black)
+                            .font(.subheadline)
+                            .offset(x: 0, y: 0)
                             .padding(.horizontal, 1)
-                        SecureField("First Name", text: $password)
+                        
+                        if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
+                           let phoneNumber = parentResponse["phoneNumber"] as? String {
+                            
+                            TextField("Phone number", text: Binding(get: {
+                                phoneNumber
+                            }, set: { value in
+                                // You may want to update the parentResponse dictionary with the new value here
+                            }))
                             .textFieldStyle(.roundedBorder)
                             .padding(.vertical, 1)
                             .padding(.horizontal, 1)
+                            
+                        } else {
+                            TextField("Phone number", text: $phoneNumber)
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.vertical, 1)
+                            .padding(.horizontal, 1)
+                        }
+                    }
+                    HStack {
+                        Label("Password", systemImage: "person")
+                            .foregroundColor(.black)
+                            .font(.subheadline)
+                            .offset(x: 0, y: 0)
+                            .padding(.horizontal, 1)
                         
-                        
-                        
-                        
+                        if let parentResponse = UserDefaults.standard.dictionary(forKey: "parentResponse"),
+                           let password = parentResponse["password"] as? String {
+                            
+                            SecureField("Password", text: Binding(get: {
+                                password
+                            }, set: { value in
+                                // You may want to update the parentResponse dictionary with the new value here
+                            }))
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.vertical, 1)
+                            .padding(.horizontal, 1)
+                            
+                        } else {
+                            TextField("Password", text: $password)
+                            .textFieldStyle(.roundedBorder)
+                            .padding(.vertical, 1)
+                            .padding(.horizontal, 1)
+                        }
                     }
                     HStack{
                         Button( action: {

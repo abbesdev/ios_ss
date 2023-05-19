@@ -75,7 +75,7 @@ class ViewModel: ObservableObject {
         }.resume()
     }
     func fetchDataTimeTable() {
-        guard let url = URL(string: "https://project-android-sim.vercel.app/timetable/getAll") else {
+        guard let url = URL(string: "https://backspace-gamma.vercel.app/timetablewithnames") else {
             fatalError("Invalid URL")
         }
         

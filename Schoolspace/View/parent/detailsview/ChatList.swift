@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct ChatList: View {
     @State var users: [UserResponseChat] = []
     @State private var isShowingDetailsChat = false
     @State private var selectedReceiverId: String?
     @State private var selectedReceiverName: String?
+    @State private var isUnlocked = false
+
     var body: some View {
         VStack {
             Text("Chat Space")
@@ -43,15 +46,15 @@ struct ChatList: View {
         .padding()
         .sheet(isPresented: $isShowingDetailsChat) {
             
-            if let userId = selectedReceiverId {
-                ChatView(senderId: "6451b3ee8779e4941e144cbe", receiverId: userId, subjectName: "Random",teacherName: selectedReceiverName ?? "")
-               }
+            if let userId = selectedReceiverId, let senderId = UserDefaults.standard.dictionary(forKey: "parentResponse")?["_id"] as? String {
+                ChatView(senderId: senderId, receiverId: userId, subjectName: "Random", teacherName: selectedReceiverName ?? "")
+            }
             
         }
     }
     
     func getUsers() {
-        let url = URL(string: "http://localhost:8080/users")!
+        let url = URL(string: "https://backspace-gamma.vercel.app/users")!
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 if let decodedUsers = try? JSONDecoder().decode([UserResponseChat].self, from: data) {

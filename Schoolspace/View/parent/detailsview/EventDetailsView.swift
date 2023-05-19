@@ -117,7 +117,7 @@ class EventDetailsViewModel: ObservableObject {
     @Published var showSheet = false
     
     func fetchEventDetails(eventId: String) {
-        let urlString = "http://localhost:8080/event/\(eventId)"
+        let urlString = "https://backspace-gamma.vercel.app/event/\(eventId)"
         guard let url = URL(string: urlString) else {
             fatalError("Invalid URL: \(urlString)")
         }

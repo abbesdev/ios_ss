@@ -3,4 +3,54 @@
    uuid = "1C24F69C-4C24-402D-B564-E9D825E88760"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACC09865-C629-467E-8256-AEF75742D3A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Schoolspace/Model/UserResponse.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "ACC09865-C629-467E-8256-AEF75742D3A6 - abe68c11b3a44281"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Schoolspace.UserResponse.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;Schoolspace.UserResponse.CodingKeys&gt;"
+                  moduleName = "Schoolspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedabbes/Downloads/ok/ios/Schoolspace/Schoolspace/Model/UserResponse.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "ACC09865-C629-467E-8256-AEF75742D3A6 - e101e2301b0acce2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Schoolspace.UserResponse.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "Schoolspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamedabbes/Downloads/ok/ios/Schoolspace/Schoolspace/Model/UserResponse.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

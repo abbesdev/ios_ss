@@ -10,20 +10,32 @@ import SwiftUI
 struct TeacherHomeView: View {
     @State private var modalAttendance = false
     @State private var modalQuiz = false
-    @State private var modalExams = false
+    @State private var modalExam = false
     @State private var modalChat = false
+    @ObservedObject var viewModelEvent = EventViewModel()
+    @State private var isShowingDetails = false
+    @State private var isShowingDetails2 = false
+    @State private var selectedEventId: String?
     var body: some View {
         
             NavigationView {
                 VStack(alignment: .trailing) {
                     
-                    Text("Class currently teaching").frame(maxWidth: .infinity, alignment: .leading)
+                    Text("Subject currently teaching").frame(maxWidth: .infinity, alignment: .leading)
                         .font(.headline)
-                  
+
                         HStack{
-                            Text("4 SIM 2")
+                            if let teacherResponse = UserDefaults.standard.dictionary(forKey: "teacherResponse"),
+                               let subject = teacherResponse["subject"] as? String {
+                                
+                                Text("Subject id :\(subject)")
                                     .font(.subheadline)
                                     .padding(.leading, 4)
+                            }else {
+                                Text("Physics")
+                                    .font(.subheadline)
+                                    .padding(.leading, 4)
+                            }
                                 Spacer()
 
                                
@@ -46,11 +58,11 @@ struct TeacherHomeView: View {
                         HStack(alignment: .center, spacing: 0){
                             Image("bbb")
                                 .onTapGesture {
-                                    //  modalAttendance = true
+                                     modalAttendance = true
                                     
                                 }
                                 .sheet(isPresented: $modalAttendance) {
-                                    // AttendanceView()
+                                     AttendanceFormView()
                                 }
                             
                             Spacer()
@@ -59,9 +71,13 @@ struct TeacherHomeView: View {
                                     modalQuiz = true
                                     
                                 }
-                                .sheet(isPresented: $modalQuiz) {
-                                    
+                                .fullScreenCover(isPresented: $modalQuiz) {
+                                    NavigationView {
+                                        QuizView()
+                                           
+                                    }
                                 }
+
                             Spacer()
                             
                             Image("aaa")
@@ -70,11 +86,21 @@ struct TeacherHomeView: View {
                                     
                                 }
                                 .sheet(isPresented: $modalChat) {
-                                    // ChatList()
+                                     ChatListparent()
                                 }
                             Spacer()
                             
                             Image("exam")
+                                .onTapGesture {
+                                    modalExam = true
+                                    
+                                }
+                                .fullScreenCover(isPresented: $modalExam) {
+                                    NavigationView {
+                                        ExamView()
+                                           
+                                    }
+                                }
                             
                         }
                         
@@ -86,9 +112,35 @@ struct TeacherHomeView: View {
                     .shadow(color: Color.black.opacity(0.05), radius: 20, x: 0, y: 4)
                     
                     
-                    Text("Today's classes to teach").frame(maxWidth: .infinity, alignment: .leading)
+                    Text("Upcoming events").frame(maxWidth: .infinity, alignment: .leading)
                         .font(.headline)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(viewModelEvent.events, id: \.id) { event in
+                                Button(action: {
+                                    selectedEventId = event.id
+                                    self.isShowingDetails.toggle()
+                                }) {
+                                    EventBox(name: event.name,
+                                             image: event.image,
+                                             description: event.description)
+                                }
+                                
+                            }
+                        }
+                    }
+                    .sheet(isPresented: $isShowingDetails) {
+                        
+                        if let eventId = selectedEventId {
+                               EventDetailsView(eventId: eventId)
+                           }
+                        
+                    }
+                    VStack{
+                        Spacer()
+                    }
                     
+
                     
                   
                     

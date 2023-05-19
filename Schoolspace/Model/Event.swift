@@ -32,7 +32,7 @@ class EventViewModel: ObservableObject {
     @Published var events: [Event] = []
     
     init() {
-        guard let url = URL(string: "http://localhost:8080/event") else { return }
+        guard let url = URL(string: "https://backspace-gamma.vercel.app/event") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {

@@ -19,11 +19,22 @@ struct ParentTimetableView: View {
                     Text("Today's Timetable").font(.headline).bold().foregroundColor(Color(0xFF016DB1)).padding(.top,10)
                     ScrollView(.vertical) {
                         VStack (spacing: 100) {
-                            ForEach(viewModel.timetables, id: \._id) { timetable in
-                                TimeTableBox(name: timetable.title,
-                                             startDate:timetable.startdate,
-                                             endDate: timetable.enddate
-                                )
+                            ForEach(viewModel.timetables, id: \.id) { timetable in
+                                VStack{
+                                    HStack{
+                                        Text(timetable.subject)
+                                            .font(.title2).frame(maxWidth: .infinity, alignment: .leading)
+                                       
+                                        
+                                    }
+                                    HStack{
+                                        Text(timetable.startDate).font(.subheadline)
+                                        Text(timetable.endDate).font(.subheadline)
+                                        
+                                    }
+                                }
+                                
+                                
                             }
                         }
                         .padding(.vertical)

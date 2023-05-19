@@ -1,5 +1,6 @@
 
 import SwiftUI
+import PayPalCheckout
 
 
 struct PaymentListView: View {
@@ -49,7 +50,7 @@ struct PaymentListView: View {
     }
     
     func getFeesByStudent() {
-        let url = URL(string: "http://localhost:8080/fee/\(studentId)")!
+        let url = URL(string: "https://backspace-gamma.vercel.app/fee/\(studentId)")!
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "GET"
@@ -100,7 +101,10 @@ struct PaymentSheetView: View {
          Spacer()
             
             Button(action: {
+                startPayPalPaymentFlow()
+
                updateFeeToPaid()
+                
             })
                    {
                        // 1
@@ -126,9 +130,48 @@ struct PaymentSheetView: View {
         
     }
     
+    func startPayPalPaymentFlow() {
+           let config = CheckoutConfig.create { config in
+               config.clientID = "YOUR_PAYPAL_CLIENT_ID"
+               config.merchantName = "Your Merchant Name"
+               config.environment = .sandbox // Use .production for live payments
+           }
+
+           let amount = Decimal(10.0) // Set your payment amount
+           let item = CheckoutItem.create { item in
+               item.name = "Item Name"
+               item.price = amount
+               item.quantity = 1
+           }
+
+           let payment = CheckoutPayment.create { payment in
+               payment.items = [item]
+               payment.amount = amount
+               payment.currencyCode = "USD" // Set your currency code
+           }
+
+           let viewController = CheckoutViewController(config: config, payment: payment) { result in
+               switch result {
+               case .cancelled:
+                   // Handle payment cancellation
+                   print("Payment cancelled")
+               case .failed(let error):
+                   // Handle payment failure
+                   print("Payment failed: \(error.localizedDescription)")
+               case .succeeded(let confirmation):
+                   // Handle payment success
+                   let transactionID = confirmation.id
+                   let status = confirmation.status
+                   print("Payment succeeded. Transaction ID: \(transactionID), Status: \(status)")
+               }
+           }
+
+           UIApplication.shared.windows.first?.rootViewController?.present(viewController, animated: true, completion: nil)
+       }
+    
     
 func updateFeeToPaid() {
-    let url = URL(string: "http://localhost:8080/fee/\(fee.id)")!
+    let url = URL(string: "https://backspace-gamma.vercel.app/fee/\(fee.id)")!
     var request = URLRequest(url: url)
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
     request.httpMethod = "PUT"

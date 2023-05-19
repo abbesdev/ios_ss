@@ -35,7 +35,7 @@ class ExamViewModel: ObservableObject {
     @Published var exams: [Exam] = []
     
     init() {
-        guard let url = URL(string: "http://localhost:8080/exam") else { return }
+        guard let url = URL(string: "https://backspace-gamma.vercel.app/exam") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {

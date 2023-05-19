@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E112F1BB2A168E5B00579BAB /* NeededModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1BA2A168E5B00579BAB /* NeededModel.swift */; };
+		E112F1BD2A16A57E00579BAB /* AddQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1BC2A16A57E00579BAB /* AddQuestion.swift */; };
+		E112F1BF2A16B4C500579BAB /* ChatListparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1BE2A16B4C500579BAB /* ChatListparent.swift */; };
+		E112F1C22A16D56600579BAB /* quizview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1C12A16D56600579BAB /* quizview.swift */; };
+		E112F1C42A16D58000579BAB /* studenthomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1C32A16D58000579BAB /* studenthomeview.swift */; };
+		E112F1C62A16D59600579BAB /* performanceview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1C52A16D59600579BAB /* performanceview.swift */; };
+		E112F1C82A16D5AA00579BAB /* quizlistview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1C72A16D5AA00579BAB /* quizlistview.swift */; };
+		E112F1CA2A16D5B800579BAB /* eventview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1C92A16D5B800579BAB /* eventview.swift */; };
+		E112F1CC2A16D5C800579BAB /* studentmainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1CB2A16D5C800579BAB /* studentmainview.swift */; };
+		E112F1CE2A16D5D400579BAB /* quizitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1CD2A16D5D400579BAB /* quizitem.swift */; };
+		E112F1D02A16D5E500579BAB /* eventitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1CF2A16D5E500579BAB /* eventitem.swift */; };
+		E112F1D22A16D5F500579BAB /* quizsingleitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1D12A16D5F500579BAB /* quizsingleitem.swift */; };
+		E112F1D42A16D60300579BAB /* quizmarkitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1D32A16D60300579BAB /* quizmarkitem.swift */; };
+		E112F1D72A16D65200579BAB /* timetabledetails_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1D62A16D65200579BAB /* timetabledetails_view.swift */; };
+		E112F1D92A16D66500579BAB /* timetable_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1D82A16D66500579BAB /* timetable_view.swift */; };
+		E112F1DB2A16D67F00579BAB /* parents_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1DA2A16D67F00579BAB /* parents_view.swift */; };
+		E112F1DD2A16D68A00579BAB /* teachers_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1DC2A16D68A00579BAB /* teachers_view.swift */; };
+		E112F1DF2A16D69A00579BAB /* students_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1DE2A16D69A00579BAB /* students_view.swift */; };
+		E112F1E12A16D6B200579BAB /* admin_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1E02A16D6B200579BAB /* admin_view.swift */; };
+		E112F1E32A16D74800579BAB /* testt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1E22A16D74800579BAB /* testt.swift */; };
+		E112F1E52A16D75F00579BAB /* home_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1E42A16D75F00579BAB /* home_view.swift */; };
+		E112F1E72A16D77400579BAB /* singleitemnotverified_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1E62A16D77400579BAB /* singleitemnotverified_view.swift */; };
+		E112F1E92A16D78400579BAB /* singleitem_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1E82A16D78400579BAB /* singleitem_view.swift */; };
+		E112F1EB2A16D79300579BAB /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1EA2A16D79300579BAB /* menu.swift */; };
+		E112F1ED2A16D7B300579BAB /* singleitemcalendar_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1EC2A16D7B300579BAB /* singleitemcalendar_view.swift */; };
+		E112F1EF2A16D7FB00579BAB /* student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1EE2A16D7FB00579BAB /* student.swift */; };
+		E112F1F12A16D81900579BAB /* quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1F02A16D81900579BAB /* quiz.swift */; };
+		E112F1F52A16D8A100579BAB /* class.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1F42A16D8A100579BAB /* class.swift */; };
+		E112F1F72A16EF3F00579BAB /* studentprofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1F62A16EF3F00579BAB /* studentprofile.swift */; };
+		E112F1F92A16FB2A00579BAB /* AddAttendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112F1F82A16FB2A00579BAB /* AddAttendance.swift */; };
 		E14A7DE12A01D8FA006BA55C /* SchoolspaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DE02A01D8FA006BA55C /* SchoolspaceApp.swift */; };
 		E14A7DF32A01D8FC006BA55C /* SchoolspaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DF22A01D8FC006BA55C /* SchoolspaceTests.swift */; };
 		E14A7DFD2A01D8FC006BA55C /* SchoolspaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A7DFC2A01D8FC006BA55C /* SchoolspaceUITests.swift */; };
@@ -44,33 +74,6 @@
 		E1833D0C2A01E28B00C13200 /* ParentTimetableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */; };
 		E1833D0D2A01E28B00C13200 /* ParentTimetableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */; };
 		E1833D0E2A01E28B00C13200 /* ParentTimetableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */; };
-		E1833D112A01E2C500C13200 /* StudentClassroomview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D102A01E2C500C13200 /* StudentClassroomview.swift */; };
-		E1833D122A01E2C500C13200 /* StudentClassroomview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D102A01E2C500C13200 /* StudentClassroomview.swift */; };
-		E1833D132A01E2C500C13200 /* StudentClassroomview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D102A01E2C500C13200 /* StudentClassroomview.swift */; };
-		E1833D152A01E2DA00C13200 /* StudentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D142A01E2DA00C13200 /* StudentHomeview.swift */; };
-		E1833D162A01E2DA00C13200 /* StudentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D142A01E2DA00C13200 /* StudentHomeview.swift */; };
-		E1833D172A01E2DA00C13200 /* StudentHomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D142A01E2DA00C13200 /* StudentHomeview.swift */; };
-		E1833D192A01E2F500C13200 /* StudentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D182A01E2F500C13200 /* StudentMainview.swift */; };
-		E1833D1A2A01E2F500C13200 /* StudentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D182A01E2F500C13200 /* StudentMainview.swift */; };
-		E1833D1B2A01E2F500C13200 /* StudentMainview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D182A01E2F500C13200 /* StudentMainview.swift */; };
-		E1833D1D2A01E30B00C13200 /* StudentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */; };
-		E1833D1E2A01E30B00C13200 /* StudentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */; };
-		E1833D1F2A01E30B00C13200 /* StudentProfileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */; };
-		E1833D212A01E32000C13200 /* StudentReportview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D202A01E32000C13200 /* StudentReportview.swift */; };
-		E1833D222A01E32000C13200 /* StudentReportview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D202A01E32000C13200 /* StudentReportview.swift */; };
-		E1833D232A01E32000C13200 /* StudentReportview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D202A01E32000C13200 /* StudentReportview.swift */; };
-		E1833D262A01E34300C13200 /* ClassroomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D252A01E34300C13200 /* ClassroomBox.swift */; };
-		E1833D272A01E34300C13200 /* ClassroomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D252A01E34300C13200 /* ClassroomBox.swift */; };
-		E1833D282A01E34300C13200 /* ClassroomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D252A01E34300C13200 /* ClassroomBox.swift */; };
-		E1833D2A2A01E35700C13200 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D292A01E35700C13200 /* SearchBar.swift */; };
-		E1833D2B2A01E35700C13200 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D292A01E35700C13200 /* SearchBar.swift */; };
-		E1833D2C2A01E35700C13200 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D292A01E35700C13200 /* SearchBar.swift */; };
-		E1833D2E2A01E35F00C13200 /* SubjectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D2D2A01E35F00C13200 /* SubjectBox.swift */; };
-		E1833D2F2A01E35F00C13200 /* SubjectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D2D2A01E35F00C13200 /* SubjectBox.swift */; };
-		E1833D302A01E35F00C13200 /* SubjectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D2D2A01E35F00C13200 /* SubjectBox.swift */; };
-		E1833D322A01E36600C13200 /* TimetableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D312A01E36600C13200 /* TimetableBox.swift */; };
-		E1833D332A01E36600C13200 /* TimetableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D312A01E36600C13200 /* TimetableBox.swift */; };
-		E1833D342A01E36600C13200 /* TimetableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D312A01E36600C13200 /* TimetableBox.swift */; };
 		E1833D372A01E39800C13200 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D362A01E39800C13200 /* SettingsView.swift */; };
 		E1833D382A01E39800C13200 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D362A01E39800C13200 /* SettingsView.swift */; };
 		E1833D392A01E39800C13200 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1833D362A01E39800C13200 /* SettingsView.swift */; };
@@ -143,6 +146,17 @@
 		E1D7267F2A080E7700C34EEB /* TeacherMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7267E2A080E7700C34EEB /* TeacherMainView.swift */; };
 		E1D726812A080F4900C34EEB /* TeacherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726802A080F4900C34EEB /* TeacherHomeView.swift */; };
 		E1D726832A080F5700C34EEB /* TeacherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726822A080F5700C34EEB /* TeacherProfileView.swift */; };
+		E1D726872A0849DC00C34EEB /* TeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726862A0849DC00C34EEB /* TeacherViewModel.swift */; };
+		E1D726892A08995200C34EEB /* UserRegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726882A08995200C34EEB /* UserRegisterResponse.swift */; };
+		E1D7268C2A09284200C34EEB /* TeacherForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7268B2A09284100C34EEB /* TeacherForm.swift */; };
+		E1D7268E2A09284900C34EEB /* ParentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7268D2A09284900C34EEB /* ParentForm.swift */; };
+		E1D726902A09285100C34EEB /* StudentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7268F2A09285100C34EEB /* StudentForm.swift */; };
+		E1D726922A093E0800C34EEB /* SubjectNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726912A093E0800C34EEB /* SubjectNew.swift */; };
+		E1D726952A0943AA00C34EEB /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726942A0943AA00C34EEB /* QuizView.swift */; };
+		E1D726972A0947F500C34EEB /* QuizResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726962A0947F500C34EEB /* QuizResponse.swift */; };
+		E1D726992A094CD100C34EEB /* AddQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D726982A094CD100C34EEB /* AddQuiz.swift */; };
+		E1D7269B2A09535C00C34EEB /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7269A2A09535C00C34EEB /* ExamView.swift */; };
+		E1D7269D2A09544D00C34EEB /* AddExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D7269C2A09544D00C34EEB /* AddExam.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +179,37 @@
 /* Begin PBXFileReference section */
 		E10E4D792A01E61B007E3D4E /* SchoolspaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolspaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10E4D7A2A01E61B007E3D4E /* SchoolspaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolspaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E112F1BA2A168E5B00579BAB /* NeededModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeededModel.swift; sourceTree = "<group>"; };
+		E112F1BC2A16A57E00579BAB /* AddQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestion.swift; sourceTree = "<group>"; };
+		E112F1BE2A16B4C500579BAB /* ChatListparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListparent.swift; sourceTree = "<group>"; };
+		E112F1C12A16D56600579BAB /* quizview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizview.swift; sourceTree = "<group>"; };
+		E112F1C32A16D58000579BAB /* studenthomeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studenthomeview.swift; sourceTree = "<group>"; };
+		E112F1C52A16D59600579BAB /* performanceview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceview.swift; sourceTree = "<group>"; };
+		E112F1C72A16D5AA00579BAB /* quizlistview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizlistview.swift; sourceTree = "<group>"; };
+		E112F1C92A16D5B800579BAB /* eventview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventview.swift; sourceTree = "<group>"; };
+		E112F1CB2A16D5C800579BAB /* studentmainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentmainview.swift; sourceTree = "<group>"; };
+		E112F1CD2A16D5D400579BAB /* quizitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizitem.swift; sourceTree = "<group>"; };
+		E112F1CF2A16D5E500579BAB /* eventitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventitem.swift; sourceTree = "<group>"; };
+		E112F1D12A16D5F500579BAB /* quizsingleitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizsingleitem.swift; sourceTree = "<group>"; };
+		E112F1D32A16D60300579BAB /* quizmarkitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizmarkitem.swift; sourceTree = "<group>"; };
+		E112F1D62A16D65200579BAB /* timetabledetails_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetabledetails_view.swift; sourceTree = "<group>"; };
+		E112F1D82A16D66500579BAB /* timetable_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetable_view.swift; sourceTree = "<group>"; };
+		E112F1DA2A16D67F00579BAB /* parents_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parents_view.swift; sourceTree = "<group>"; };
+		E112F1DC2A16D68A00579BAB /* teachers_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teachers_view.swift; sourceTree = "<group>"; };
+		E112F1DE2A16D69A00579BAB /* students_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = students_view.swift; sourceTree = "<group>"; };
+		E112F1E02A16D6B200579BAB /* admin_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_view.swift; sourceTree = "<group>"; };
+		E112F1E22A16D74800579BAB /* testt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testt.swift; sourceTree = "<group>"; };
+		E112F1E42A16D75F00579BAB /* home_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_view.swift; sourceTree = "<group>"; };
+		E112F1E62A16D77400579BAB /* singleitemnotverified_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitemnotverified_view.swift; sourceTree = "<group>"; };
+		E112F1E82A16D78400579BAB /* singleitem_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitem_view.swift; sourceTree = "<group>"; };
+		E112F1EA2A16D79300579BAB /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		E112F1EC2A16D7B300579BAB /* singleitemcalendar_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleitemcalendar_view.swift; sourceTree = "<group>"; };
+		E112F1EE2A16D7FB00579BAB /* student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = student.swift; sourceTree = "<group>"; };
+		E112F1F02A16D81900579BAB /* quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiz.swift; sourceTree = "<group>"; };
+		E112F1F42A16D8A100579BAB /* class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = class.swift; sourceTree = "<group>"; };
+		E112F1F62A16EF3F00579BAB /* studentprofile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentprofile.swift; sourceTree = "<group>"; };
+		E112F1F82A16FB2A00579BAB /* AddAttendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttendance.swift; sourceTree = "<group>"; };
+		E112F1FA2A1703D600579BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E14A7DE02A01D8FA006BA55C /* SchoolspaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolspaceApp.swift; sourceTree = "<group>"; };
 		E14A7DE62A01D8FC006BA55C /* Schoolspace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schoolspace.entitlements; sourceTree = "<group>"; };
 		E14A7DF22A01D8FC006BA55C /* SchoolspaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolspaceTests.swift; sourceTree = "<group>"; };
@@ -182,15 +227,6 @@
 		E1833D032A01E25B00C13200 /* ParentMainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMainview.swift; sourceTree = "<group>"; };
 		E1833D072A01E27300C13200 /* ParentProfileview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentProfileview.swift; sourceTree = "<group>"; };
 		E1833D0B2A01E28B00C13200 /* ParentTimetableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTimetableview.swift; sourceTree = "<group>"; };
-		E1833D102A01E2C500C13200 /* StudentClassroomview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClassroomview.swift; sourceTree = "<group>"; };
-		E1833D142A01E2DA00C13200 /* StudentHomeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeview.swift; sourceTree = "<group>"; };
-		E1833D182A01E2F500C13200 /* StudentMainview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainview.swift; sourceTree = "<group>"; };
-		E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileview.swift; sourceTree = "<group>"; };
-		E1833D202A01E32000C13200 /* StudentReportview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentReportview.swift; sourceTree = "<group>"; };
-		E1833D252A01E34300C13200 /* ClassroomBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomBox.swift; sourceTree = "<group>"; };
-		E1833D292A01E35700C13200 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		E1833D2D2A01E35F00C13200 /* SubjectBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectBox.swift; sourceTree = "<group>"; };
-		E1833D312A01E36600C13200 /* TimetableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableBox.swift; sourceTree = "<group>"; };
 		E1833D362A01E39800C13200 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E1833D442A01E3FD00C13200 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		E1833D482A01E40C00C13200 /* OtpModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpModal.swift; sourceTree = "<group>"; };
@@ -228,6 +264,17 @@
 		E1D7267E2A080E7700C34EEB /* TeacherMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherMainView.swift; sourceTree = "<group>"; };
 		E1D726802A080F4900C34EEB /* TeacherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherHomeView.swift; sourceTree = "<group>"; };
 		E1D726822A080F5700C34EEB /* TeacherProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileView.swift; sourceTree = "<group>"; };
+		E1D726862A0849DC00C34EEB /* TeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewModel.swift; sourceTree = "<group>"; };
+		E1D726882A08995200C34EEB /* UserRegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterResponse.swift; sourceTree = "<group>"; };
+		E1D7268B2A09284100C34EEB /* TeacherForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherForm.swift; sourceTree = "<group>"; };
+		E1D7268D2A09284900C34EEB /* ParentForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentForm.swift; sourceTree = "<group>"; };
+		E1D7268F2A09285100C34EEB /* StudentForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentForm.swift; sourceTree = "<group>"; };
+		E1D726912A093E0800C34EEB /* SubjectNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectNew.swift; sourceTree = "<group>"; };
+		E1D726942A0943AA00C34EEB /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		E1D726962A0947F500C34EEB /* QuizResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResponse.swift; sourceTree = "<group>"; };
+		E1D726982A094CD100C34EEB /* AddQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuiz.swift; sourceTree = "<group>"; };
+		E1D7269A2A09535C00C34EEB /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
+		E1D7269C2A09544D00C34EEB /* AddExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExam.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +315,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E112F1C02A16D54F00579BAB /* student */ = {
+			isa = PBXGroup;
+			children = (
+				E112F1C12A16D56600579BAB /* quizview.swift */,
+				E112F1C32A16D58000579BAB /* studenthomeview.swift */,
+				E112F1C52A16D59600579BAB /* performanceview.swift */,
+				E112F1C72A16D5AA00579BAB /* quizlistview.swift */,
+				E112F1C92A16D5B800579BAB /* eventview.swift */,
+				E112F1CB2A16D5C800579BAB /* studentmainview.swift */,
+				E112F1CD2A16D5D400579BAB /* quizitem.swift */,
+				E112F1CF2A16D5E500579BAB /* eventitem.swift */,
+				E112F1D12A16D5F500579BAB /* quizsingleitem.swift */,
+				E112F1D32A16D60300579BAB /* quizmarkitem.swift */,
+				E112F1F62A16EF3F00579BAB /* studentprofile.swift */,
+			);
+			path = student;
+			sourceTree = "<group>";
+		};
+		E112F1D52A16D63E00579BAB /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				E112F1D62A16D65200579BAB /* timetabledetails_view.swift */,
+				E112F1D82A16D66500579BAB /* timetable_view.swift */,
+				E112F1DA2A16D67F00579BAB /* parents_view.swift */,
+				E112F1DC2A16D68A00579BAB /* teachers_view.swift */,
+				E112F1DE2A16D69A00579BAB /* students_view.swift */,
+				E112F1E02A16D6B200579BAB /* admin_view.swift */,
+				E112F1E22A16D74800579BAB /* testt.swift */,
+				E112F1E42A16D75F00579BAB /* home_view.swift */,
+				E112F1E62A16D77400579BAB /* singleitemnotverified_view.swift */,
+				E112F1E82A16D78400579BAB /* singleitem_view.swift */,
+				E112F1EA2A16D79300579BAB /* menu.swift */,
+				E112F1EC2A16D7B300579BAB /* singleitemcalendar_view.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 		E14A7DD42A01D8FA006BA55C = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +367,9 @@
 		E14A7DDF2A01D8FA006BA55C /* Schoolspace */ = {
 			isa = PBXGroup;
 			children = (
+				E112F1FA2A1703D600579BAB /* Info.plist */,
+				E112F1D52A16D63E00579BAB /* screens */,
+				E112F1C02A16D54F00579BAB /* student */,
 				E1ABB2E12A01EB1000FB4D6D /* GoogleService-Info.plist */,
 				E1833CFC2A01E20900C13200 /* View Model */,
 				E1833CFB2A01E20300C13200 /* Model */,
@@ -315,10 +402,10 @@
 		E1833CF62A01E1DA00C13200 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E1D7268A2A09283300C34EEB /* completing */,
 				E1D7267D2A080E6700C34EEB /* teacher */,
 				E1833D3A2A01E3AC00C13200 /* authentication */,
 				E1833D352A01E38B00C13200 /* App Settings */,
-				E1833D0F2A01E2B100C13200 /* student */,
 				E1833CFD2A01E21D00C13200 /* parent */,
 				E1833CF72A01E1E600C13200 /* Splash.swift */,
 			);
@@ -344,6 +431,12 @@
 				E15BFCEE2A072919005F50AA /* ChatMessage.swift */,
 				E15BFCF02A073540005F50AA /* Message.swift */,
 				E1D7267B2A080C6000C34EEB /* StudentDetailsResponse.swift */,
+				E1D726882A08995200C34EEB /* UserRegisterResponse.swift */,
+				E1D726912A093E0800C34EEB /* SubjectNew.swift */,
+				E1D726962A0947F500C34EEB /* QuizResponse.swift */,
+				E112F1EE2A16D7FB00579BAB /* student.swift */,
+				E112F1F02A16D81900579BAB /* quiz.swift */,
+				E112F1F42A16D8A100579BAB /* class.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +449,7 @@
 				E1833D682A01E4AB00C13200 /* StudentClassroomViewModel.swift */,
 				E1833D6C2A01E4BC00C13200 /* StudentHomeViewModel.swift */,
 				E1D726792A080A4C00C34EEB /* ParentHomeViewModel.swift */,
+				E1D726862A0849DC00C34EEB /* TeacherViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -386,30 +480,6 @@
 				E1D726772A07FA4000C34EEB /* ChatList.swift */,
 			);
 			path = detailsview;
-			sourceTree = "<group>";
-		};
-		E1833D0F2A01E2B100C13200 /* student */ = {
-			isa = PBXGroup;
-			children = (
-				E1833D242A01E33300C13200 /* Components */,
-				E1833D102A01E2C500C13200 /* StudentClassroomview.swift */,
-				E1833D142A01E2DA00C13200 /* StudentHomeview.swift */,
-				E1833D182A01E2F500C13200 /* StudentMainview.swift */,
-				E1833D1C2A01E30B00C13200 /* StudentProfileview.swift */,
-				E1833D202A01E32000C13200 /* StudentReportview.swift */,
-			);
-			path = student;
-			sourceTree = "<group>";
-		};
-		E1833D242A01E33300C13200 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				E1833D252A01E34300C13200 /* ClassroomBox.swift */,
-				E1833D292A01E35700C13200 /* SearchBar.swift */,
-				E1833D2D2A01E35F00C13200 /* SubjectBox.swift */,
-				E1833D312A01E36600C13200 /* TimetableBox.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		E1833D352A01E38B00C13200 /* App Settings */ = {
@@ -444,11 +514,37 @@
 		E1D7267D2A080E6700C34EEB /* teacher */ = {
 			isa = PBXGroup;
 			children = (
+				E1D726932A09439B00C34EEB /* Details view */,
 				E1D7267E2A080E7700C34EEB /* TeacherMainView.swift */,
 				E1D726802A080F4900C34EEB /* TeacherHomeView.swift */,
 				E1D726822A080F5700C34EEB /* TeacherProfileView.swift */,
 			);
 			path = teacher;
+			sourceTree = "<group>";
+		};
+		E1D7268A2A09283300C34EEB /* completing */ = {
+			isa = PBXGroup;
+			children = (
+				E1D7268B2A09284100C34EEB /* TeacherForm.swift */,
+				E1D7268D2A09284900C34EEB /* ParentForm.swift */,
+				E1D7268F2A09285100C34EEB /* StudentForm.swift */,
+			);
+			path = completing;
+			sourceTree = "<group>";
+		};
+		E1D726932A09439B00C34EEB /* Details view */ = {
+			isa = PBXGroup;
+			children = (
+				E1D726942A0943AA00C34EEB /* QuizView.swift */,
+				E1D726982A094CD100C34EEB /* AddQuiz.swift */,
+				E1D7269A2A09535C00C34EEB /* ExamView.swift */,
+				E1D7269C2A09544D00C34EEB /* AddExam.swift */,
+				E112F1BA2A168E5B00579BAB /* NeededModel.swift */,
+				E112F1BC2A16A57E00579BAB /* AddQuestion.swift */,
+				E112F1BE2A16B4C500579BAB /* ChatListparent.swift */,
+				E112F1F82A16FB2A00579BAB /* AddAttendance.swift */,
+			);
+			path = "Details view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,60 +698,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1833D5D2A01E47200C13200 /* LoginViewModel.swift in Sources */,
+				E1D726972A0947F500C34EEB /* QuizResponse.swift in Sources */,
 				E1B2DCDC2A02736D00B53D7A /* Event.swift in Sources */,
-				E1833D2E2A01E35F00C13200 /* SubjectBox.swift in Sources */,
+				E112F1F72A16EF3F00579BAB /* studentprofile.swift in Sources */,
 				E1D7267C2A080C6000C34EEB /* StudentDetailsResponse.swift in Sources */,
+				E112F1E12A16D6B200579BAB /* admin_view.swift in Sources */,
 				E1833D512A01E42C00C13200 /* Signup.swift in Sources */,
 				E1ABB2EE2A01F5DD00FB4D6D /* PerformanceView.swift in Sources */,
 				E1833D792A01E4EF00C13200 /* Subject.swift in Sources */,
+				E1D726892A08995200C34EEB /* UserRegisterResponse.swift in Sources */,
 				E1833D812A01E4FF00C13200 /* User.swift in Sources */,
 				E1D726812A080F4900C34EEB /* TeacherHomeView.swift in Sources */,
 				E1833D452A01E3FD00C13200 /* Login.swift in Sources */,
-				E1833D2A2A01E35700C13200 /* SearchBar.swift in Sources */,
+				E112F1C42A16D58000579BAB /* studenthomeview.swift in Sources */,
+				E112F1D72A16D65200579BAB /* timetabledetails_view.swift in Sources */,
+				E112F1C62A16D59600579BAB /* performanceview.swift in Sources */,
+				E112F1D92A16D66500579BAB /* timetable_view.swift in Sources */,
+				E112F1E92A16D78400579BAB /* singleitem_view.swift in Sources */,
+				E112F1CA2A16D5B800579BAB /* eventview.swift in Sources */,
 				E1833D752A01E4EA00C13200 /* Classroom.swift in Sources */,
 				E1833CF82A01E1E600C13200 /* Splash.swift in Sources */,
 				E1D726832A080F5700C34EEB /* TeacherProfileView.swift in Sources */,
-				E1833D262A01E34300C13200 /* ClassroomBox.swift in Sources */,
+				E112F1CC2A16D5C800579BAB /* studentmainview.swift in Sources */,
+				E112F1DF2A16D69A00579BAB /* students_view.swift in Sources */,
 				E1833D6D2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */,
 				E1833D042A01E25B00C13200 /* ParentMainview.swift in Sources */,
 				E1ABB2E42A01ECBB00FB4D6D /* StudentResponse.swift in Sources */,
 				E1833D7D2A01E4F900C13200 /* Timetable.swift in Sources */,
-				E1833D322A01E36600C13200 /* TimetableBox.swift in Sources */,
 				E1B2DCDA2A02731200B53D7A /* EventBox.swift in Sources */,
+				E1D7269B2A09535C00C34EEB /* ExamView.swift in Sources */,
 				E1ABB2E82A01EE9100FB4D6D /* TeacherResponse.swift in Sources */,
-				E1833D1D2A01E30B00C13200 /* StudentProfileview.swift in Sources */,
 				E19F14D32A06CF6D00FCEDA3 /* EventDetailsView.swift in Sources */,
-				E1833D212A01E32000C13200 /* StudentReportview.swift in Sources */,
+				E1D726992A094CD100C34EEB /* AddQuiz.swift in Sources */,
 				E1833D082A01E27300C13200 /* ParentProfileview.swift in Sources */,
 				E1833D372A01E39800C13200 /* SettingsView.swift in Sources */,
 				E1833D592A01E44A00C13200 /* VerifyAccountModal.swift in Sources */,
+				E112F1C82A16D5AA00579BAB /* quizlistview.swift in Sources */,
 				E1D726782A07FA4000C34EEB /* ChatList.swift in Sources */,
-				E1833D152A01E2DA00C13200 /* StudentHomeview.swift in Sources */,
+				E112F1E72A16D77400579BAB /* singleitemnotverified_view.swift in Sources */,
+				E112F1DD2A16D68A00579BAB /* teachers_view.swift in Sources */,
 				E15BFCEB2A06E036005F50AA /* ExamDetailsView.swift in Sources */,
 				E15BFCF12A073540005F50AA /* Message.swift in Sources */,
+				E112F1E52A16D75F00579BAB /* home_view.swift in Sources */,
+				E112F1ED2A16D7B300579BAB /* singleitemcalendar_view.swift in Sources */,
 				E1ABB2F42A01FACB00FB4D6D /* Fee.swift in Sources */,
-				E1833D112A01E2C500C13200 /* StudentClassroomview.swift in Sources */,
 				E1D7267F2A080E7700C34EEB /* TeacherMainView.swift in Sources */,
-				E1833D192A01E2F500C13200 /* StudentMainview.swift in Sources */,
 				E1833D712A01E4DB00C13200 /* Classe.swift in Sources */,
+				E112F1BB2A168E5B00579BAB /* NeededModel.swift in Sources */,
+				E112F1D42A16D60300579BAB /* quizmarkitem.swift in Sources */,
+				E1D726922A093E0800C34EEB /* SubjectNew.swift in Sources */,
 				E1ABB2EA2A01F5BF00FB4D6D /* AttendanceView.swift in Sources */,
+				E1D726902A09285100C34EEB /* StudentForm.swift in Sources */,
+				E1D726952A0943AA00C34EEB /* QuizView.swift in Sources */,
+				E112F1DB2A16D67F00579BAB /* parents_view.swift in Sources */,
 				E1833D4D2A01E41D00C13200 /* ResetPasswordView.swift in Sources */,
+				E112F1BF2A16B4C500579BAB /* ChatListparent.swift in Sources */,
 				E15BFCEF2A072919005F50AA /* ChatMessage.swift in Sources */,
 				E1833D612A01E48400C13200 /* SignupViewModel.swift in Sources */,
+				E112F1BD2A16A57E00579BAB /* AddQuestion.swift in Sources */,
 				E1ABB2EC2A01F5CF00FB4D6D /* FeesView.swift in Sources */,
+				E112F1D02A16D5E500579BAB /* eventitem.swift in Sources */,
+				E1D7268E2A09284900C34EEB /* ParentForm.swift in Sources */,
+				E112F1F52A16D8A100579BAB /* class.swift in Sources */,
+				E112F1D22A16D5F500579BAB /* quizsingleitem.swift in Sources */,
+				E112F1F12A16D81900579BAB /* quiz.swift in Sources */,
 				E15BFCED2A07257F005F50AA /* ChatView.swift in Sources */,
 				E1ABB2F02A01F60F00FB4D6D /* AskTeacherView.swift in Sources */,
+				E112F1C22A16D56600579BAB /* quizview.swift in Sources */,
 				E1ABB2E62A01ED1100FB4D6D /* ParentResponse.swift in Sources */,
 				E1833D002A01E24800C13200 /* ParentHomeview.swift in Sources */,
 				E1833D552A01E43A00C13200 /* SignupModal.swift in Sources */,
+				E1D7268C2A09284200C34EEB /* TeacherForm.swift in Sources */,
 				E1ABB2F22A01F71400FB4D6D /* Attendance.swift in Sources */,
+				E112F1F92A16FB2A00579BAB /* AddAttendance.swift in Sources */,
 				E1833D852A01E50700C13200 /* UserResponse.swift in Sources */,
+				E1D726872A0849DC00C34EEB /* TeacherViewModel.swift in Sources */,
+				E112F1EB2A16D79300579BAB /* menu.swift in Sources */,
 				E1833D492A01E40C00C13200 /* OtpModal.swift in Sources */,
+				E112F1E32A16D74800579BAB /* testt.swift in Sources */,
 				E15BFCE92A06DC84005F50AA /* Exam.swift in Sources */,
 				E1833D0C2A01E28B00C13200 /* ParentTimetableview.swift in Sources */,
+				E1D7269D2A09544D00C34EEB /* AddExam.swift in Sources */,
 				E1D7267A2A080A4C00C34EEB /* ParentHomeViewModel.swift in Sources */,
+				E112F1CE2A16D5D400579BAB /* quizitem.swift in Sources */,
 				E14A7DE12A01D8FA006BA55C /* SchoolspaceApp.swift in Sources */,
 				E1833D692A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */,
+				E112F1EF2A16D7FB00579BAB /* student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,27 +792,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1833D5E2A01E47200C13200 /* LoginViewModel.swift in Sources */,
-				E1833D2F2A01E35F00C13200 /* SubjectBox.swift in Sources */,
 				E1833D522A01E42C00C13200 /* Signup.swift in Sources */,
 				E1833D7A2A01E4EF00C13200 /* Subject.swift in Sources */,
 				E1833D822A01E4FF00C13200 /* User.swift in Sources */,
 				E1833D462A01E3FD00C13200 /* Login.swift in Sources */,
-				E1833D2B2A01E35700C13200 /* SearchBar.swift in Sources */,
 				E1833D762A01E4EA00C13200 /* Classroom.swift in Sources */,
 				E1833CF92A01E1E600C13200 /* Splash.swift in Sources */,
-				E1833D272A01E34300C13200 /* ClassroomBox.swift in Sources */,
 				E1833D6E2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */,
 				E1833D052A01E25B00C13200 /* ParentMainview.swift in Sources */,
 				E1833D7E2A01E4F900C13200 /* Timetable.swift in Sources */,
-				E1833D332A01E36600C13200 /* TimetableBox.swift in Sources */,
-				E1833D1E2A01E30B00C13200 /* StudentProfileview.swift in Sources */,
-				E1833D222A01E32000C13200 /* StudentReportview.swift in Sources */,
 				E1833D092A01E27300C13200 /* ParentProfileview.swift in Sources */,
 				E1833D382A01E39800C13200 /* SettingsView.swift in Sources */,
 				E1833D5A2A01E44A00C13200 /* VerifyAccountModal.swift in Sources */,
-				E1833D162A01E2DA00C13200 /* StudentHomeview.swift in Sources */,
-				E1833D122A01E2C500C13200 /* StudentClassroomview.swift in Sources */,
-				E1833D1A2A01E2F500C13200 /* StudentMainview.swift in Sources */,
 				E1833D722A01E4DB00C13200 /* Classe.swift in Sources */,
 				E1833D4E2A01E41D00C13200 /* ResetPasswordView.swift in Sources */,
 				E1833D622A01E48400C13200 /* SignupViewModel.swift in Sources */,
@@ -702,36 +821,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1833D302A01E35F00C13200 /* SubjectBox.swift in Sources */,
 				E1833D632A01E48400C13200 /* SignupViewModel.swift in Sources */,
 				E1833D572A01E43A00C13200 /* SignupModal.swift in Sources */,
-				E1833D1F2A01E30B00C13200 /* StudentProfileview.swift in Sources */,
 				E1833D832A01E4FF00C13200 /* User.swift in Sources */,
 				E14A7DFD2A01D8FC006BA55C /* SchoolspaceUITests.swift in Sources */,
 				E1833D5B2A01E44A00C13200 /* VerifyAccountModal.swift in Sources */,
 				E1833D022A01E24800C13200 /* ParentHomeview.swift in Sources */,
 				E1833D4B2A01E40C00C13200 /* OtpModal.swift in Sources */,
-				E1833D172A01E2DA00C13200 /* StudentHomeview.swift in Sources */,
 				E1833D392A01E39800C13200 /* SettingsView.swift in Sources */,
 				E1833D4F2A01E41D00C13200 /* ResetPasswordView.swift in Sources */,
-				E1833D1B2A01E2F500C13200 /* StudentMainview.swift in Sources */,
-				E1833D132A01E2C500C13200 /* StudentClassroomview.swift in Sources */,
 				E1833D062A01E25B00C13200 /* ParentMainview.swift in Sources */,
-				E1833D2C2A01E35700C13200 /* SearchBar.swift in Sources */,
 				E1833D7F2A01E4F900C13200 /* Timetable.swift in Sources */,
 				E1833CFA2A01E1E600C13200 /* Splash.swift in Sources */,
 				E1833D7B2A01E4EF00C13200 /* Subject.swift in Sources */,
-				E1833D232A01E32000C13200 /* StudentReportview.swift in Sources */,
 				E1833D532A01E42C00C13200 /* Signup.swift in Sources */,
 				E1833D772A01E4EA00C13200 /* Classroom.swift in Sources */,
 				E1833D732A01E4DB00C13200 /* Classe.swift in Sources */,
 				E1833D0A2A01E27300C13200 /* ParentProfileview.swift in Sources */,
 				E1833D0E2A01E28B00C13200 /* ParentTimetableview.swift in Sources */,
-				E1833D342A01E36600C13200 /* TimetableBox.swift in Sources */,
 				E1833D5F2A01E47200C13200 /* LoginViewModel.swift in Sources */,
 				E1833D6B2A01E4AB00C13200 /* StudentClassroomViewModel.swift in Sources */,
 				E1833D472A01E3FD00C13200 /* Login.swift in Sources */,
-				E1833D282A01E34300C13200 /* ClassroomBox.swift in Sources */,
 				E14A7DFF2A01D8FC006BA55C /* SchoolspaceUITestsLaunchTests.swift in Sources */,
 				E1833D6F2A01E4BC00C13200 /* StudentHomeViewModel.swift in Sources */,
 				E1833D872A01E50700C13200 /* UserResponse.swift in Sources */,
@@ -880,6 +990,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Schoolspace/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To securely authenticate you and protect your account, this app uses Face ID for login verification.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -921,11 +1033,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Schoolspace/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To securely authenticate you and protect your account, this app uses Face ID for login verification.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;

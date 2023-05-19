@@ -54,7 +54,7 @@ struct ChatView: View {
                 }
     }
     func fetchChatHistory() {
-        guard let url = URL(string: "http://localhost:8080/chat/\(senderId)/\(receiverId)") else {
+        guard let url = URL(string: "https://backspace-gamma.vercel.app/chat/\(senderId)/\(receiverId)") else {
             print("Invalid URL")
             return
         }
@@ -98,7 +98,7 @@ struct ChatView: View {
         task.resume() // Add this line to start the task
     }
     func sendChatMessage(_ chatMessage: ChatMessage, completion: @escaping (Result<ChatMessage, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:8080/chat") else {
+        guard let url = URL(string: "https://backspace-gamma.vercel.app/chat") else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
         }

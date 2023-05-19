@@ -16,9 +16,14 @@ class LoginViewModel: ObservableObject {
     @Published var loggedInStudent = false
     @Published var loggedInParent = false
     @Published var loggedInTeacher = false
+    @Published var loggedInAdmin = false
+
+    @Published var loggedInNotStudent = false
+    @Published var loggedInNotParent = false
+    @Published var loggedInNotTeacher = false
     
     func loginUser(email: String, password: String) {
-        let url = URL(string: "http://localhost:8080/login")!
+        let url = URL(string: "https://backspace-gamma.vercel.app/login")!
         let body = ["email": email, "password": password]
         let bodyData = try! JSONSerialization.data(withJSONObject: body)
 
@@ -52,7 +57,15 @@ class LoginViewModel: ObservableObject {
                             do {
                                 let studentResponse = try JSONDecoder().decode(StudentResponse.self, from: data)
                                 // Handle student response
-                                self.loggedInStudent = true
+                                
+                                if(studentResponse.className == "6458f81487f6465601a9bae0"){
+                                    self.loggedInNotStudent = true
+
+                                }
+                                else
+                                {
+                                    self.loggedInStudent = true
+                                }
                                 let defaults = UserDefaults.standard
                                 let responseDict = try JSONSerialization.jsonObject(with: data) as? [String: Any]
                                        defaults.set(responseDict, forKey: "studentResponse")
@@ -65,7 +78,14 @@ class LoginViewModel: ObservableObject {
                             do {
                                 let parentResponse = try JSONDecoder().decode(ParentResponse.self, from: data)
                                 // Handle parent response
-                                self.loggedInParent = true
+                                if(parentResponse.child.first == nil){
+                                    self.loggedInNotParent = true
+
+                                }
+                                else
+                                {
+                                    self.loggedInParent = true
+                                }
                                 let defaults = UserDefaults.standard
                                 // Convert the UserResponse to a dictionary and save it to UserDefaults
                                 let responseDict = try JSONSerialization.jsonObject(with: data) as? [String: Any]
@@ -79,11 +99,31 @@ class LoginViewModel: ObservableObject {
                         case "teacher":
                             do {
                                 let teacherResponse = try JSONDecoder().decode(TeacherResponse.self, from: data)
-                                self.loggedInTeacher = true
+                                if(teacherResponse.subject == "6458f81487f6465601a9bae0"){
+                                    self.loggedInNotTeacher = true
+
+                                }
+                                else
+                                {
+                                    self.loggedInTeacher = true
+                                }
                                 let defaults = UserDefaults.standard
                                 let responseDict = try JSONSerialization.jsonObject(with: data) as? [String: Any]
                                        defaults.set(responseDict, forKey: "teacherResponse")
                                 // Handle teacher response
+                            } catch {
+                                print("Error decoding teacher response: \(error)")
+                                self.showError = true
+                                self.errorMessage = "Invalid response from server"
+                            }
+                        case "admin":
+                            do {
+                             
+                               
+                               
+                                    self.loggedInAdmin = true
+                                
+                            
                             } catch {
                                 print("Error decoding teacher response: \(error)")
                                 self.showError = true
